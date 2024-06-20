@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script type="text/javascript" language="javascript">
+
+window.onload = function(){
+
+		document.getElementById("botao").onclick = function(){
+		
+			var resp = document.getElementById("resposta");
+					
+				
+				var ajax = new XMLHttpRequest();
+				
+				
+				ajax.onreadystatechange = function(){
+					
+						if(ajax.readyState == 4){
+							
+							resp.innerHTML+= ajax.responseText;
+						}	
+				}
+				
+				
+				
+				ajax.open("POST","arquivo.txt",true);
+				ajax.send(null);//ajax.send(nome=edu&idade=54)
+				
+		}	
+}
+</script>
+</head>
+
+<body>
+<div>
+  <input type="button" name="botao" id="botao" value="Button">
+</div>
+<div id="resposta"></div>
+</body>
+</html>

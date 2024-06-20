@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //só consigo fazer com condicional: while ou do_while
+        //eu NÂO SEI quantas vezes o laço vai girar pois essa é a resposta do problema.
+        //usarei uma variavel para controlar(controladora) e outra variavel para contar(contadora)
+        //qual é o 1o multiplo comum entre 11, 13 e 17
+        let cont = 1;//contadora
+        let achei = false;//controladora
+
+        while(achei == false){
+            if(cont % 11 == 0 && cont % 13 == 0 && cont % 17 == 0){
+                document.write(`O numero é: ${cont}`);
+                //achei = true;
+                break;
+            }
+            cont++;
+        }
+        document.write("<hr>");
+        document.write(11*13*17);
+        /////////////////////////////////////////////////////
+        document.write("<hr>");
+        //quais sao os multiplos de 3 que estao entre 1 e 100
+        //sei quantas vezes o laço vai girar: 100vezes
+        //o for é mais apropriado embora pudesse fazer com o while ou o do_while
+        for(i=1;i<=100;i++){
+            if(i % 3 == 0){
+                document.write(`${i}, `)
+            }
+        }
+        document.write("<hr>");
+        for(i=3;i<=100;i += 3){//i = i + 3
+                document.write(`${i}, `)
+        }
+    </script>
+</body>
+</html>

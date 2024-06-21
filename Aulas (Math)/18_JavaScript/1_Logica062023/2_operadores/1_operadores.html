@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+        //////////////////////////////////////////////
+        //opradores de atribuição
+        //em logica de programação
+        //num <- 5;//variavel num recebe o valor 5 ou o conteudo 5 é atribuido à variavel num
+        //No JS o operador de atribuição é o "="
+        let num = 5;
+        console.log(num);//5
+        num = 652;
+        console.log(num);//652
+
+        //acumular valores:
+        num = num + 8;
+        console.log(num);//660
+        //forma reduzida de acumular
+        num += 8;//num = num + 8;
+        console.log(num);//668
+        //incremento e decremento
+        //somar ou subtrair 1 do valor da variavel
+        num++;//num = num + 1;
+        console.log(num);//669
+        ++num
+        console.log(num);//670
+        num--;//num = num - 1;
+        console.log(num);//669
+        --num
+        console.log(num);//668
+
+        let nome = "Eduardo ";
+        console.log(nome);//Eduardo
+        nome = nome + "Pretel ";
+        console.log(nome);//Eduardo Pretel
+        nome += "Filho";
+        console.log(nome);//Eduardo Pretel Filho
+
+        /////////////////////////////////
+        //Operadores aritimeticos
+        /*
+        + adição
+        - subtração
+        * multiplicação
+        / divisão
+        % resto da divisao
+        ** potencia
+        */
+
+        console.log(5+3);
+        console.log(5-3);
+        console.log(5*3);
+        console.log(5/3);
+        console.log(5%3);
+        console.log(5**3);
+
+        console.log(Math.pow(5,3));
+        console.log(Math.sqrt(25));
+        //https://www.w3schools.com/js/js_math.asp
+        console.log(Math.round(25.3))	//Returns x rounded to its nearest integer
+        console.log(Math.ceil(25.3))	//Returns x rounded up to its nearest integer
+        console.log(Math.floor(25.99))	//Returns x rounded down to its nearest integer
+        console.log(Math.trunc(25.99))	//Returns the integer part of x (new in ES6)
+        console.log(Math.hypot(3, 4));
+        /*
+        calculo hipotenusa
+        let cat1 = prompt("entre com o 1o cateto");
+        let cat2 = prompt("entre com o 2o cateto");
+        h = Math.sqrt(Math.pow(cat1,2)+Math.pow(cat2,2))
+        alert(h);
+
+        lição de casa :  equação do 2o grau
+        */
+        
+        //operador literal - concatenação =>  +
+        console.log(5+3);
+        console.log("5"+"3")
+        console.log("5"+3)
+        console.log(Number("5")+3)
+        console.log(parseInt("5.8")+3)
+        console.log(parseFloat("5.8")+3)
+        
+        console.log("Edu" + " " + "Pretel");
+
+        /////////////////////////////////////////////
+        //operados de comparação
+        //comparam 2 valores apenas e retorna true ou false
+        
+        console.log("igualdade")
+        
+        let x = 9
+        console.log(x == 5)//false
+        //somente verifica o valor - nao verifica o tipo  de dado
+        console.log("5" == 5)//true
+      
+        console.log("identicidade")
+        //verifica o valor e o tipo  de dado
+        console.log("5" === 5)//false - sao iguais mas nao tem o mesmo tipo
+
+        //sensitive case
+        console.log("Edu" == "edu")//false
+
+        console.log("diferença")
+        /*
+        <> - nao existe
+        devemos usar a negação !    !
+        diferente !=
+        nao identico !==
+        */
+       console.log("5" != 5)//false
+       console.log("5" !== 5)//true
+
+       /////////////////////////////////////////////////////
+       console.log("maior ou menor")
+       /*
+       < - menor
+       > - maior
+       <= - menor OU igual
+       >= - maior OU igual
+       */
+
+       console.log(4 <= 4)//true
+       console.log(3 <= 4)//true
+       console.log(3 < 4)//true
+
+       ///////////////////////////////////////////////
+       //operadores logicos
+       //faço mais de uma comparação e QUERO APENAS UM  resultado
+       console.log("Comparador logico AND")
+       //AND - nao se usa
+       //&& => utilizar isto
+       //todas as verivicações tem que retornar TRUE para que o conjunto todo retorne TRUE
+       //basta uma ser FALSE para o conjunto todo retornar FALSE
+        console.log(4 <= 4 && 8 == 9);//(T && F) (F)
+        console.log(4 <= 4 && 8 != 9);//(T && T) (T)
+
+        console.log("Comparador logico OR")
+       //OR - nao se usa
+       //|| => utilizar isto
+       //todas as verivicações tem que retornar FALSE para que o conjunto todo retorne FALSE
+       //basta uma ser TRUE para o conjunto todo retornar TRUE
+        console.log(4 <= 4 || 8 == 9);//(T || F) (T)
+        console.log(4 <= 4 || 8 != 9);//(T || T) (T)
+        console.log(5 <= 4 || 8 == 9);//(F || F) (F)
+
+        console.log("Comparador logico XOR")
+       //XOR - nao se usa
+       // ^ - utilizar isto
+       //XOR - OU exclusivo - OU unico
+       //somente uma verificação pode retorna TRUE para que todo o conjunto retorne TRUE
+      
+        console.log(4 <= 4 ^ 8 == 9);//(T ^ F) (T) 1 
+        console.log(4 <= 4 ^ 8 != 9);//(T ^ T) (F) 0
+        console.log(5 <= 4 ^ 8 == 9);//(F ^ F) (F) 0
+
+        console.log("TABELA VERDADE")
+        /*
+        TABELA VERDADE
+        P1  P2  AND OR  XOR
+        V   V   V   V   F
+        V   F   F   V   V
+        F   V   F   V   V
+        F   F   F   F   F
+        */
+
+        console.log("Negação !")
+        console.log(!true);//false
+        console.log(!false);//true
+        
+        ///////////////////////////////////////////
+        //OPERADOR TERNARIO
+        console.log("TERNARIO ?")
+        console.log(5 === '5' ? 'Bonitinho!!!!' : 'MANÉ!!!!')
+        console.log(5 === 5   ? 'Bonitinho' : 'MANÉ')
+
+    </script>
+</body>
+</html>

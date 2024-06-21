@@ -34,30 +34,46 @@ header#topo h1{
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 /*Menu*/
 nav{
-    background-color: bisque;
     position: fixed;
     z-index: 100;
     top: 310px;
     left: 0;
     width: 200px;
 }
+ol{
+    width: 200px;
+}
+nav li{
+    border-bottom: 1px solid black;
+    width: 20px;
+    transition: width .5s;
+}
+nav li:hover{
+    width: 100%;
+}
 nav li a{
-    font-size: 0.875rem; /*Equivale a 14px*/
-    text-decoration: none;
-    line-height: 2.5rem;
     display: block;
+    font-size: 0.875rem;/*14px*/
+    height: 100%;
+    text-decoration: none;
+    text-align: center;
+    line-height: 2.5rem;
+    overflow: hidden;   
+    white-space: nowrap;
+    padding-left: 20px;
+    box-sizing: border-box;
+
 }
 nav a:link, a:visited{
-    background-color: rgb(255, 255, 255);
-    color: rgb(90, 90, 90);
-    text-align: justify;
-    border-left: rgb(255,0,0) 3px solid;
-}
-nav a:hover{
-    background-color: black;
-    color: white;
-    border-left-color: aqua;
+    background-color: rgb(255,255,255);
+    color: rgb(128, 128, 128);
+    border-left: rgb(255, 0, 0) 3px solid;
     
+}
+nav a:hover,nav a:active{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-left-color: aqua;
 }
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 section{

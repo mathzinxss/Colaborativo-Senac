@@ -18,7 +18,7 @@
             Não mostrará as informações na URL 
             As informações serão enviadas fechadas no corpo da requisição
         -->
-        <form action="" method="">
+        <form action="https://www.edupretel.com.br/html5/mensagem.php" method="post">
             <fieldset>
                 <legend>Informações Pessoais</legend>
                 <p>
@@ -32,12 +32,14 @@
                             maxlength="50"
                             placeholder="Digite seu nome..."
                             tabindex="2"
-                            required 
                     >
+                    <!--
+
+                    -->
                 </p>
                 <p>
                     <label for="senha" tabindex="3">Senha</label>
-                    <input type="password" id="senha" name="senha" tabindex="4" placeholder="Digite sua senha..." required>
+                    <input type="password" id="senha" name="senha" tabindex="4" placeholder="Digite sua senha...">
                 </p>
                 <p>
                     <label for="email" tabindex="5">E-mail</label>
@@ -48,12 +50,11 @@
                     <input type="date" name="dataNasc" id="dataNasc" tabindex="8">
                 </p>
             </fieldset>
-
             <fieldset>
                 <legend>Listas</legend>
                 <p>
-                    <label for="ufNasc">UF Nascimento</label>
-                    <select name="ufNasc" id="ufNasc">
+                    <label for="ufNasc" tabindex="9">UF Nascimento</label>
+                    <select name="ufNasc" id="ufNasc" tabindex="10">
                         <option value="sp">São Paulo</option>
                         <option value="ba">Bahia</option>
                         <option value="rj">Rio de Janeiro</option>
@@ -61,34 +62,52 @@
                         <option value="ac">Acre</option>
                         <option value="ce">Ceará</option>
                         <option value="pe">Pernambuco</option>
-                        <option value="pa">Pará</option>
+                        <option value="pa" selected>Pará</option>
                         <option value="pr">Paraná</option>
                     </select>
                 </p>
                 <p>
-                    <label for="ufMora">UF Moradia</label>
-                    <select name="ufMora[]" id="ufMora" multiple>
+                    <label for="ufMora" tabindex="11">UF Moradia</label>
+                    <select name="ufMora" id="ufMora" multiple tabindex="12">
                         <option value="sp">São Paulo</option>
                         <option value="ba">Bahia</option>
                         <option value="rj">Rio de Janeiro</option>
                         <option value="se">Sergipe</option>
                         <option value="ac">Acre</option>
                         <option value="ce">Ceará</option>
-                        <option value="pe">Pernambuco</option>
+                        <option value="pe" selected>Pernambuco</option>
                         <option value="pa">Pará</option>
                         <option value="pr">Paraná</option>
                     </select>
                 </p>
                 <p>
-                    <input type="radio" id="sexo_m" name="sexo" value="M">
-                    <label for="sexo_m">Masculino</label>
+                    Sexo: <br>
+                    <input type="radio" id="sexo_m" name="sexo" value="M" tabindex="13">
+                    <label for="sexo_m" tabindex="14">Masculino</label>
                     <br>
-                    <input type="radio"  id="sexo_f" name="sexo" value="F">
-                    <label for="sexo_f">Feminino</label>
+                    <input type="radio"  id="sexo_f" name="sexo" value="F" tabindex="15" checked>
+                    <label for="sexo_f" tabindex="16">Feminino</label>
                 </p>
-
+                <p>
+                    Idiomas: <br>
+                    <input type="checkbox" name="idiomas[]" id="ingles" value="ing">
+                    <label for="ingles">Ingles</label>
+                    <br>
+                    <input type="checkbox" name="idiomas[]" id="frances" value="fra">
+                    <label for="frances">Frances</label>
+                    <br>
+                    <input type="checkbox" name="idiomas[]" id="espanhol" value="esp">
+                    <label for="espanhol">Espanhol</label>
+                    <br>
+                    <input type="checkbox" name="idiomas[]" id="italiano" value="ita">
+                    <label for="italiano">Italiano</label>
+                    <br>
+                </p>
             </fieldset>
-            
+            <input type="hidden" name="recipient" value="math983839179drive@gmail.com" >
+            <input type="hidden" name="subject" value="Velozes e Furiosos 8 para cima não tem mais graça">
+            <input type="hidden" name="redirect" value="obrigado.html">
+             
             <p>
                 <input type="submit" value="Enviar Formulário"> 
                 <input type="reset" >

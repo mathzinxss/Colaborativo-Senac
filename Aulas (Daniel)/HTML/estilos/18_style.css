@@ -3,6 +3,9 @@ label{
     text-align: right;
     display: inline-block;
 }
+.formata{
+    text-align: left;
+}
 fieldset{
     padding: 10px;
     border-radius: 15px;

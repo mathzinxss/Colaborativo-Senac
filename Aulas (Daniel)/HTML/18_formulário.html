@@ -85,27 +85,27 @@
             <p>
                 Sexo<br>
                 <input type="radio" id="sexo_m" name="sexo" value="M">
-                <label for="sexo_m">Masculino</label>
+                <label class="formata" for="sexo_m">Masculino</label>
                 <br>
                 <input type="radio" id="sexo_f" name="sexo" value="F" checked>
-                <label for="sexo_f">Feminino</label>
+                <label class="formata" for="sexo_f">Feminino</label>
             </p>
             <p>
-                idiomas:<br>
+                Idiomas:<br>
                 <input type="checkbox" name="idiomas[]" id="ingles" value="ing">
-                <label for="Ingles">Ingles</label>
+                <label class="formata" for="Ingles">Ingles</label>
                 <br>
 
                 <input type="checkbox" name="idiomas[]" id="frances" value="fra">
-                <label for="frances">Frances</label>
+                <label class="formata" for="frances">Frances</label>
                 <br>
 
                 <input type="checkbox" name="idiomas[]" id="espanhol" value="esp">
-                <label for="espanhol">Espanhol</label>
+                <label class="formata" for="espanhol">Espanhol</label>
                 <br>
 
                 <input type="checkbox" name="idiomas[]" id="italiano" value="ita">
-                <label for="italiano">Italiano</label>
+                <label class="formata" for="italiano">Italiano</label>
                 <br>
             </p>
 
@@ -132,7 +132,7 @@
                         maxlength="18"
                         minlength="18"
                         required
-                        pattern="\d{2}\.\d{3}\.\d{3}\/\d{4}\-\d{2}"
+                        pattern="\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}"
                         title="Digite o CNPJ no formato nn.nnn.nnn./0000-0"
                         oninvalid="alert('CNPJ invalido')">
                         

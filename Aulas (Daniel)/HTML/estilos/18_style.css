@@ -9,3 +9,11 @@ fieldset{
     box-shadow: 3px 1px 15px grey;
     margin-top: 15px;
 }
+@media only print{
+    figure,#botoes{
+        display:none;
+    }
+    fieldset{
+        box-shadow: none;
+    }
+}

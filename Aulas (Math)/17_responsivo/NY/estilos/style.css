@@ -73,7 +73,13 @@ h2{
 através das medias queries, faremos os break points
 */
 
-@media only screen AND (min-width:480px) {
-    background-color: ;
-    
+@media only  screen AND (min-width:480px){
+    body{
+        background-color: yellowgreen;
+    }
+}
+@media only  screen AND (min-width:768px){
+    body{
+        background-color: rgb(255, 0, 0);
+    }
 }

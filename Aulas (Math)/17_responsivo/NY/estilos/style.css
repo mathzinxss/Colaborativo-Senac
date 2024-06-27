@@ -30,6 +30,10 @@ header.header img{
     max-width: 234px;
 }
 
+header nav ul{
+    position: relative;
+}
+
 header nav li{
     list-style-type: none;
     background-color: #56ece0;
@@ -38,6 +42,26 @@ header nav li{
     /*line-height: 30px; Altera a altura da linha sem alterar o tamanho da fonte*/
     line-height: 1.87rem; /*Altera a altura da linha sem alterar o tamanho da fonte de forma responsiva*/
     margin-bottom: 0.12rem; /* 2px / 16 = rem*/
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+li#icon{
+    display: inline-block;
+    padding: 0 5%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*
+deixa vermelho o 1º item da lista da ul
+nav ul.esconde li:first-child*/
+nav ul.esconde li:not(:first-child){
+    display: none;
+}
+nav ul.mostra li:not(:first-child){
+    display: block;
 }
 
 header nav li a, a{
@@ -81,13 +105,43 @@ h2{
 através das medias queries, faremos os break points
 */
 
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=TABLET-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 @media only  screen AND (min-width:480px){
-    header{
-        background-color: yellowgreen;
+    nav li{
+        width: 25%;
+        float: left;
+    }
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=HAMBURGUINHO=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+    nav ul#menu li#icon{
+        display: none;
+    }
+    nav ul#menu li:not(:first-child){
+        display: block;
+    }
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+    #coluna1, #coluna3{
+        width: 47%;
+        float: left;
+        margin-right: 6%;
+
+    }
+    #coluna2, #coluna4{
+        width: 47%;
+        float: left;
+    }
+    #rodape{
+        clear: both;
     }
 }
 @media only  screen AND (min-width:768px){
-    header{
+    body{
         background-color: rgb(255, 0, 0);
+    }
+    #coluna1, #coluna2, #coluna3{
+        width: 20.5%;
+        margin-right: 6%;
+    }
+    #coluna4{
+        width: 20.5%;
     }
 }

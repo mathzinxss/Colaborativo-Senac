@@ -13,19 +13,30 @@
     <header class="header">
       <div>
         <img src="img/logo-spacetours.png" alt="Logo Space tours" class="logo">
+
       </div>
       <nav>
-        <ul>
+        <ul id="menu" class="mostra">
           <li><a href="#">Home</a></li>
           <li><a href="#">Sobre</a></li>
           <li><a href="#">Pacotes</a></li>
           <li><a href="#">Contato</a></li>
+          <li id="icon"><a href="javascript:void(0)" onclick="alert('Oi')">&#9776;</a></li>
         </ul>
       </nav>
     </header>
 
     <section id="banner">
-      <figure><img src="img/banner.jpg"></figure>
+      <!--
+        <picture>
+        <source media="only  screen AND (min-width:480px)" srcset="img/banner2.jpg">
+        <img src="img/banner.jpg">
+      </picture>
+      -->
+      <picture>
+        <source media="only  screen AND (min-width:480px)" srcset="img/banner.jpg">
+        <img src="img/banner2.jpg">
+      </picture>
       <div class="caixa">
         <h1>NY: Capital do Mundo!</h1>
         <p>Experimente a mudança de paradigma de conhecer a Capital do Mundo de um novo ponto de vista.</p>

@@ -35,6 +35,10 @@ header nav li a,a{
     text-decoration: none;
     display: block;
 }
+li#icon{
+    display: ;
+}
+
 #coluna1,#coluna2,#coluna3,#coluna4{
     border:1px solid rgb(128, 128, 128);
     margin-bottom: 1.4rem;

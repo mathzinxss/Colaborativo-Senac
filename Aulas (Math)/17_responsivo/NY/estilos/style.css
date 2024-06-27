@@ -1,18 +1,26 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/*
+media: screen handhell projector print 
+*/
+
+@media all{
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        font-size: 1rem; /*1rem = tamanho da letra padrão para cada dispositivo*/
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    img{
+        width: 100%;
+        height: auto;
+    }
+
 }
 
-body{
-    font-size: 1rem; /*1rem = tamanho da letra padrão para cada dispositivo*/
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-img{
-    width: 100%;
-    height: auto;
-}
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 /*
 MOBILE FIRST
@@ -74,12 +82,12 @@ através das medias queries, faremos os break points
 */
 
 @media only  screen AND (min-width:480px){
-    body{
+    header{
         background-color: yellowgreen;
     }
 }
 @media only  screen AND (min-width:768px){
-    body{
+    header{
         background-color: rgb(255, 0, 0);
     }
 }

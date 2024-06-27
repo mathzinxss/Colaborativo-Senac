@@ -1,0 +1,93 @@
+/*
+media: screen handhell projector print 
+*/
+
+@media all{
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+        font-size: 1rem; /*1rem = tamanho da letra padrão para cada dispositivo*/
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+/*
+MOBILE FIRST
+*/
+
+header.header img{
+    max-width: 234px;
+}
+
+header nav li{
+    list-style-type: none;
+    background-color: #56ece0;
+    border: solid 1px rgb(171, 178, 182);
+    text-align: center;
+    /*line-height: 30px; Altera a altura da linha sem alterar o tamanho da fonte*/
+    line-height: 1.87rem; /*Altera a altura da linha sem alterar o tamanho da fonte de forma responsiva*/
+    margin-bottom: 0.12rem; /* 2px / 16 = rem*/
+}
+
+header nav li a, a{
+    color: rgb(0, 72, 82);
+    font-size: .94rem;
+    text-decoration: none;
+    display: block;
+}
+
+article{
+    border: 1px solid #7a7a7a;
+    margin-bottom: 1.4rem;
+}
+
+article p{
+    text-align: justify;
+    font-size: .81rem;
+    margin: 1.56rem 1%; /*Para medidas verticais, não se pode usar "px" ou "%", e sim usar o "rem", agora para medidas horizontais, usasse o "%"*/
+}
+h1{
+    color: rgb(2, 31, 31);
+    font-size: 1.69rem;
+}
+
+h2{
+    color: rgb(2, 31, 31);
+    font-size: 1.3rem;
+}
+
+#rodape{
+    background-color: #073535;
+}
+
+#rodape p{
+    line-height: 5rem;
+    text-align: center;
+    color: #b9b9b9;
+}
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+/* media query => media type + condição
+através das medias queries, faremos os break points
+*/
+
+@media only  screen AND (min-width:480px){
+    body{
+        background-color: yellowgreen;
+    }
+}
+@media only  screen AND (min-width:768px){
+    body{
+        background-color: rgb(255, 0, 0);
+    }
+}

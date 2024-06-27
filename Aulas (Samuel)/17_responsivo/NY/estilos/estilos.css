@@ -6,6 +6,7 @@
 body{
     font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: orange;
 }
 img{
     width: 100%;
@@ -19,7 +20,7 @@ header.header img{
     max-width: 234px;
 }
 header nav{
-
+    position: relative;
 }
 header nav li{
     list-style-type: none;
@@ -29,6 +30,23 @@ header nav li{
     line-height: 1.87rem;/* 30px / 16 = rem*/
     margin-bottom: 0.12rem;/* 2px / 16 = rem */
 }
+/************* HAMBURGUINO***************/
+li#icon{
+    display: inline-block;
+    padding: 0 5%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/*deixa vermelho o primeiro item*/
+nav ul.esconde li:not(:first-child){
+    display: none;
+}
+
+nav ul.mostra li:not(:first-child){
+    display: block;
+}
+
 header nav li a,a{
     color:rgb(0, 0, 102);
     font-size: .94rem;
@@ -53,7 +71,7 @@ h2{
     font-size: 1.3rem;
 }
 #rodape{
-    background-color: rgb(240, 125, 38);
+    background-color: rgb(224, 71, 16);
 }
 #rodape p{
     line-height: 5rem;
@@ -64,13 +82,23 @@ h2{
 atraves das medias queries faremos os break points
 */
 
-/* Agora trabalharemos para tablet!!!!*/
+/***************Agora trabalharemos para TABLET!!!!**************************/
 
 @media only screen AND (min-width:480px){
     nav li{
         width: 25%;
         float: left;
     }
+    /*HAMBURGUINHO*/
+    nav ul#menu li#icon{
+        display: none;
+    }
+    nav ul#menu li:not(:first-child){
+        display: block;
+    }
+
+    /************************************/
+
     #coluna1,#coluna3{
         width: 47%;
         float: left;

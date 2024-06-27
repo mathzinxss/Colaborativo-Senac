@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" language="javascript">
+        //local padrao para o JS
+    </script>
+</head>
+<body>
+
+    <p>Eu sou um paragrafo HTML</p>
+    <p>Eu sou outro paragrafo HTML</p>
+    <hr><!-- HORIZONTAL RULE -->
+    &lt;hr&gt;&euro;&copy;
+    <hr>
+   <script>
+        //local padrao para o JS
+        /*
+            Variaveis:espaço na memoria de trabalho (RAM) onde guardo informaçoes somente durante a execução do programa 
+
+            LINGUAGENS COMPILADAS:variaveis DEVEM ser declaradas e é a PRIMEIRA coisa a ser  feita.
+            dizer qual é o TAMANHO  e o TIPO DE DADOS que será armazenado nela
+            tipo: string(conjunto de caracteres, numericas[inteiro ou ponto flutuante] , boolean [true, false] );
+            lidas somente por maquinas - linguagem de baixo nivel
+
+            LINGUAGENS INTERPRETADAS: Sãp interpretadas por um programa externo - HTML, CSS, JavaScvript, PHP, ASP
+            não se declara variavel
+            O tipo de dado estará relacionado com o conteudo da variavel
+            Eu posso alterar o tipo de dado duranteb a execução do programa
+
+            Tipos de Dados
+            Simples- Reconhecer pelos dados:
+                Strings => alfaNumericos - conjunto de caracteres delimitados por aspas - '35' - 'Edu' - "98" - "Impacta" - `98` - `crase`
+                Numbers => Float (123879.456) - integer (18 - 25)
+                Boolean => TRUE ou FALSE
+
+            Compostas:
+                Array
+                Object
+
+
+            O mesmo se faz para CONSTANTES: Mesmo que variaveis, porem seu conteudo NÂO pode ser alterado durante a execução do programa
+            const pi = 3.1416
+
+
+            Dado:representação digital de uma informação do mundo real
+
+            entrada  de dados  |  processamente de dados  |  Saida de dados
+
+            1 - entrada  de dados - leia
+            2 -   processamente de dados  
+            3 -  Saida de dados - escreva
+        */
+       //let nome = prompt('Digite aqui o seu nome');
+       //alert(nome) ;
+        
+       
+
+
+       //entrada de dados 
+       num1 = window.prompt('Digite o primeiro numero');//leia
+       num2 = prompt('Digite o segundo numero');//leia
+
+       //processamento
+        resultado = Number(num1) + Number(num2);
+        saida = "A soma de "+ num1 +" por "+ num2 + " é igual à "+ resultado + "!!!!!";
+
+        //saida de dados
+        window.alert(saida);
+        window.document.write(saida);    
+        document.write("<hr>");
+        window.console.log(saida);
+
+        /////////////////////////////////////////////////////////////////////
+        //TESTANDO TIPO DE DADOS E VARIAVEIS
+        //troco o conteudo e protanto o dadfo durante o processamento
+        let nome = 'Edu';
+        console.log(nome);
+        console.log(typeof(nome));//string
+        console.log(typeof(num1));//string
+        console.log(typeof(resultado));//number
+
+        nome = true;
+        console.log(nome);
+        console.log(typeof(nome));//boolean
+
+        //var
+        var escola = "impacta";
+        console.log(escola);
+        var escola = "Samba";
+        console.log(escola);
+       
+
+        
+        ////////////////////////////////////////////////////////////////////
+        //testando constante - não pode trocar o conteudo durante o processamento
+        const curso = "Fullstack";
+        console.log(curso);
+        console.log(typeof(curso));//string
+
+        curso = "oi";//1_boxes.html:94 Uncaught TypeError: Assignment to constant variable.   at 1_boxes.html:94:15
+
+        ///////////////////////////////////////////////////////////////
+        //Regras para nomes de variaveis e constantes
+        //Nao pode começar com Numeros
+        //pode conter numeros e letras e o carcter $
+        //nao pode espaço em branco
+        ///////////////////////////////////////////////////////////////
+
+        
+    </script>
+</body>
+</html> 

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/50_revisao.css">
+
+    <!-- 
+                cascade : proximidade com o conteúdo
+        quanto mais perto, mais expecífico
+        quanto mais longe, mais genérico
+
+        longe: arquivos externos
+        médio: tag style no head
+        perto: atributo style na tag
+    -->
+
+    <style>
+        #um {
+            /* font: 1rem*/
+            font-size: 2rem;
+            box-shadow: 5px 5px 5px black;
+            text-shadow: 2px 2px 2px rgb(0, 0, 0);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+            direction: ltr;
+            unicode-bidi: bidi-override;
+            text-transform: capitalize;
+            text-indent: 50px;
+        }
+
+        h1 {
+            letter-spacing: 50px;
+            text-align: center;
+            writing-mode: vertical-lr;
+        }
+
+        /*
+        cascata => através dp seçetpr
+        tag => mais genérico - menos específico
+        class => especificidade intermediária
+        id => mais específico
+        */
+
+        p {
+            text-align: center;
+            font-size: 1rem;
+            text-decoration: line-through;
+            color: brown;
+        }
+
+        .impar {
+            text-shadow: greenyellow 1px 1px 1px;
+            text-decoration: underline;
+            color: black;
+        }
+
+        #tres {
+            font-style: italic;
+            text-decoration: none;
+        }
+        #exemplo{
+            color: green;
+            font-size: 3rem;
+            text-indent: 100px;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <article id="exemplo" style="color:black; font-size: 1rem; ;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem quo animi facilis at nemo quia placeat nostrum, pariatur non ad iure consectetur voluptatibus commodi magni, excepturi officia quaerat velit, incidunt ullam iusto. Vero, fugit itaque et rem amet quisquam magnam tenetur, ducimus ea maiores fuga inventore magni quos nemo laboriosam porro vel asperiores laborum ipsum necessitatibus fugiat excepturi odit ipsam! Modi magnam dolorum iste sit maxime reprehenderit, quis quas, quasi quos illo iusto suscipit vel eveniet eius pariatur obcaecati dolore dicta voluptates ratione! Quos laudantium vero libero tenetur autem assumenda aspernatur placeat corrupti, optio atque, ex esse impedit cum labore!</article>
+
+    <h1>SENAC</h1>
+    <!-- p*10>lorem50 -->
+
+    <p id="um" class="impar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eaque adipisci ut error
+        quos illo iste atque temporibus cumque. Corporis est quisquam perspiciatis, quae illo, magnam voluptatum qui,
+        sunt maiores sit consectetur debitis laudantium hic possimus dolorum corrupti tempora cum. Dolores eligendi
+        dolor nemo, quibusdam corporis odio atque saepe debitis?</p>
+
+    <p id="dois" class="par">Quia, eaque facere? Corporis at quidem numquam non ipsum, nisi praesentium repellendus
+        culpa est. Reiciendis animi consequatur aliquid quidem unde est eos odit iste mollitia numquam repudiandae,
+        iusto dicta atque. Tempore at nesciunt eius ipsum animi itaque maiores eveniet quo ut rerum. Ipsam voluptates
+        esse ipsum aut omnis autem expedita?</p>
+
+    <p id="tres" class="impar">Itaque voluptas asperiores iste neque at perferendis ullam quasi, obcaecati distinctio,
+        odio iusto aliquam eaque. Et illo molestiae sint assumenda vitae dolores est rerum illum recusandae aperiam vel
+        possimus, nam voluptatem aliquam fugiat minima magnam nobis laborum natus, impedit in repellendus aut velit
+        quis. Pariatur facilis quisquam temporibus earum voluptatem.</p>
+
+    <p id="quatro" class="par">Vitae saepe at nostrum modi doloremque? Impedit at maxime deserunt ut praesentium non
+        architecto et iusto nulla iste nobis sed veritatis molestiae exercitationem consequuntur, ipsa sunt quidem
+        provident ratione ducimus nostrum. Accusantium delectus, ex voluptates repellendus eius sint, qui facere animi
+        quas hic pariatur dolores officia optio aperiam expedita beatae!</p>
+
+    <p id="cinco" class="impar">Unde, amet pariatur, nemo aliquam velit veniam quo corporis, adipisci explicabo vitae
+        rem exercitationem expedita excepturi libero sint? Similique neque magni architecto minus facere nobis
+        praesentium adipisci vel temporibus beatae, eum dolore sed, veniam maiores eos! Voluptate facere sapiente
+        laborum ab eveniet, obcaecati voluptatem sed officia. Ipsam, iure placeat! Alias?</p>
+
+    <p id="seis" class="par">Nisi hic dolores perferendis ducimus veritatis minima est, totam laboriosam placeat
+        perspiciatis earum nemo libero! Dolorum explicabo possimus reiciendis corrupti magnam odio distinctio nam
+        molestias, quaerat vero asperiores repellendus ex perferendis iure vitae laboriosam dolores maxime omnis?
+        Consequuntur quo odio, unde autem molestiae excepturi laborum nobis inventore nulla accusamus corrupti?</p>
+
+    <p id="sete" class="impar">Odit consequatur sunt architecto corporis excepturi maxime numquam omnis harum. Corporis
+        nihil inventore ipsa sapiente, corrupti libero culpa quidem ad et molestias mollitia officia aut, quis magni,
+        dolore excepturi error sequi autem laboriosam! Amet sunt dolore cum obcaecati voluptatum inventore provident
+        iste accusantium nisi magnam doloremque, voluptate ipsum nobis sit?</p>
+
+    <p id="oito" class="par">Enim similique quaerat qui deserunt repudiandae, nemo nisi at corrupti nihil eos, rerum
+        facere sit iusto perferendis in eveniet eaque deleniti, facilis alias ipsa nesciunt quibusdam officia quos ut?
+        Dolor vero ipsum odio suscipit ipsa consequuntur architecto exercitationem tempore deleniti voluptas iusto
+        sapiente ratione totam, optio, repellendus perferendis. Tenetur, blanditiis.</p>
+
+    <p id="nove" class="impar">Quam et facilis aut id officia dolorum consequatur! Suscipit nesciunt odio vitae,
+        cupiditate, molestias ratione, iusto obcaecati atque natus velit officiis expedita ipsam sequi nisi maxime
+        deserunt. Dignissimos quam quasi omnis laboriosam qui libero odio quod nulla dolor ullam, quo, ducimus
+        consequatur explicabo maxime. Totam nostrum illo dolor explicabo reprehenderit.</p>
+
+    <p id="dez" class="par">Ipsa dolores, accusantium maiores quae voluptatem quam laudantium dolor architecto possimus
+        asperiores totam deleniti nemo, itaque ex. Mollitia odit officiis magni, doloribus reprehenderit enim ad,
+        distinctio incidunt eius sed earum molestias nam fuga. Quas assumenda in odio, dolore maiores voluptatibus. Aut
+        incidunt architecto nisi? Quidem, laudantium? Vitae ab quasi fuga.</p>
+
+</body>
+
+</html>

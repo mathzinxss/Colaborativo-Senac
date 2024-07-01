@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("ai");
+    </script>
+    <button onclick="alert('Aiiiii!')">Aperte-me</button>
+    <br>
+    <button onclick="alert(primeira(50,70))">Primeira</button>
+    <br>
+    <button id="um" >Não Obstrutivo button</button>
+
+
+    <hr>
+
+    <input type="button" value="botaoInput" ondblclick="alert('shopee')">
+    
+    <input id="dois" type="button" value="botaoInput Não Obstrutivo">
+
+    <script>
+        
+        function primeira(num1,num2){
+                //var num1 = 50;
+                //var num2 = 20;
+                var resposta = num1 + num2;
+                return resposta;
+        }
+
+        document.getElementById('um').onclick = function(){
+            alert('Aiiii');
+        }
+        document.getElementById('dois').onclick =function(){
+            alert('oi');
+            //document.write('ui');
+            console.log('ai');
+            alert(45 * 38)
+        }
+    </script>
+</body>
+</html>

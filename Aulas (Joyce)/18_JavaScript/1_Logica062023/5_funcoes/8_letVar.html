@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            let pode ter escopo local em estrutura de controle
+            var em estrutura de controle declara a variavel global
+        */
+        let num = 7;
+        let nome="Mick Jagger";
+        if(num != 8){
+            let nome="Edu";
+            alert(nome);
+        }
+
+        document.write(nome);
+    </script>
+</body>
+</html>

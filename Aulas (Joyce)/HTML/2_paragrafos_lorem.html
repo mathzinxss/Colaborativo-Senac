@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            text-align: justify;
+        }
+        #um{
+            border:15px black solid;
+            padding:25px;
+            width:500px;
+            /*
+            a caixa ficará com 540px
+            5px + 15px + 500px + 15px + 5px
+
+            Isto acontece porque a caixa traz a propriedade
+            box-sizing(medindo o tamanho da caixa) como content-box por padrão.
+            Por isso o width será para o content-box( caixa de conteudo)
+            */
+            box-sizing: content-box;
+        }
+
+        #dois{
+            border:5px solid black;
+            padding:15px;
+            width: 460px;
+            /*
+            Para a caixa ficar com 500px o widyh precisa ser 460px
+            5px + 15px +460px +15px + 5px = 500
+            */
+        }
+        #tres{
+            border:15px black solid;
+            padding:25px;
+            width:500px;
+            /*
+            a caixa ficará sempre com 500px
+           pois mudei a propriedade box-sizing para border-box, portanto a propriedade width será medida de borda a borda
+            */
+            box-sizing: border-box;
+        }
+        #quatro{
+            border:10px black double;
+            padding: 40px;
+            background-color: bisque;
+            background-clip: content-box;
+        }
+
+        #cinco{
+            border:red 5px solid;
+
+            /* o que for feito para padding vale tambem para margem
+            padding:50px; - colocará padding para os quatro lados
+            
+            
+
+            padding-top: 20px;
+            padding-right: 40px;
+            padding-bottom: 60px;
+            padding-left: 80px;
+            
+            padding:20px 40px 60px 80px; sentido horario T R B L 
+            
+            padding: 20px 1800px 50px; T RL B:  
+            */
+            padding:30px 100px; /* TB RL*/
+        }
+        #seis{
+            
+            
+
+            border-left-width: 10px;
+            border-top-width: 20px;
+            border-bottom-width: 30px;
+            border-right-width: 40px;
+            /*
+            border-left-color: blue;
+            border-top-color: red;
+            border-bottom-color: green;
+            border-right-color: gold;
+            */
+
+            border-color: red gold green blue;
+
+
+            border-left-style: dashed;
+            border-top-style: dotted;
+            border-bottom-style: groove;
+            border-right-style: ridge;
+
+            
+        }
+        #sete{
+            border:blue 10px double;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        https://br.lipsum.com/
+
+        p
+        p*3
+
+        lorem
+        p>lorem
+        p>lorem5 -> lorem com 5 palavras
+        p*3>lorem20
+
+        p*10>lorem35
+    -->
+        
+
+
+    <!--
+        BOX MODEL DO 1º PARAGRAFO
+
+    -->
+        <p id="um">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quidem officia quos natus atque enim autem, odit ullam pariatur consequatur beatae excepturi in, quod maxime voluptatem quisquam? Obcaecati iusto, voluptas ut provident tempora natus earum.</p>
+
+    <!--
+        BOX MODEL DO 2º PARAGRAFO
+
+    -->    
+        <p id="dois">Neque pariatur exercitationem possimus suscipit nulla, ab rem laborum sequi est molestias officiis, eum, facilis vero rerum fuga omnis? Laudantium veniam dolore voluptatibus qui assumenda expedita officia quia, eligendi maxime, quisquam corporis quasi perferendis? Vel!</p>
+        <p id="tres">Nesciunt sequi inventore similique in odio saepe, earum dolor unde eligendi eos debitis vel maiores molestiae voluptas accusantium nulla quis ex vitae aperiam! Officia illum ipsum sapiente accusamus odit reiciendis ipsa ab voluptas dolorum nemo?</p>
+        <p id="quatro">Molestias eligendi ad cum maxime quia deserunt? Totam excepturi maiores, maxime sequi quo assumenda id, distinctio suscipit autem ipsam molestias itaque, quidem fugiat dolorem mollitia hic quasi accusamus animi vel numquam aliquid. Quisquam, ipsum accusamus.</p>
+
+        <p id="cinco">Animi voluptate ea magni beatae nobis nisi, mollitia distinctio exercitationem rerum. Autem maxime sed laborum corporis vitae debitis labore quos dicta voluptate quas magni harum illum facere expedita exercitationem repudiandae iste quidem, libero error. Dolorem?</p>
+
+        <p id="seis">Animi voluptate ea magni beatae nobis nisi, mollitia distinctio exercitationem rerum. Autem maxime sed laborum corporis vitae debitis labore quos dicta voluptate quas magni harum illum facere expedita exercitationem repudiandae iste quidem, libero error. Dolorem?</p>
+        <p id="sete">Quod, recusandae suscipit! Esse minima magnam nemo facilis consequuntur necessitatibus, odio deleniti! Ducimus commodi blanditiis vel. Fugiat cupiditate unde enim maxime, voluptatum quisquam molestiae illo quam accusantium eos debitis deserunt dolor quas porro ipsa accusamus.</p>
+        <p>Temporibus beatae illum recusandae voluptatem qui aut impedit ea, numquam quasi ducimus maxime eligendi voluptatum aperiam soluta voluptas asperiores repellendus. Reprehenderit iste excepturi dicta voluptate, ducimus id soluta, ipsa quisquam, accusantium ut harum quo! Repudiandae!</p>
+        <p>Non, quia. Quos blanditiis, facilis odit nihil quo corrupti eveniet veniam quidem? Consequatur perspiciatis quod sint dolorem harum provident vero voluptatum tempore fugiat assumenda, accusantium nesciunt? Tempore molestias, illum quia ducimus corporis dolores in asperiores?</p>
+        <p>Odit iure consectetur iste quas alias ipsum, optio adipisci ut cum, autem earum accusamus? Expedita unde, repellat quidem ipsam labore assumenda corrupti doloribus molestias sapiente soluta. Facilis, quod. Earum voluptatibus libero mollitia deleniti ratione illum!</p>
+        <p>Quae excepturi accusamus omnis voluptatum voluptatibus. Consequuntur necessitatibus, maxime laudantium repellat sunt tempora labore debitis dolorum, adipisci quibusdam corporis numquam eius exercitationem molestiae nostrum doloribus! Dolore facilis perspiciatis, incidunt ipsum necessitatibus eligendi laborum temporibus aperiam.</p>
+        
+
+</body>
+</html>

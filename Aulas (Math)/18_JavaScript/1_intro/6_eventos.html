@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function calculaIdade(){
+            let nasc = 0
+            let ano = 2024
+            
+            nasc = prompt("Digite o ano de nascimento:");
+            
+            resp = 2024 - Number(nasc);
+            
+            alert(`No final do ano de ${ano} esta pessoa terá ${resp} anos!!!`);
+        }
+    </script>
+
+</head>
+<body>
+    <button type="button" onclick="javascript:calculaIdade()">Evento Clique</button>
+    <button type="button" ondblclick="calculaIdade()">Evento Duplo Clique</button>
+    <button type="button" onmouseover="calculaIdade()">Evento Mouse em Cima</button>
+    <button type="button" onmouseout="calculaIdade()">Evento Mouse Fora</button>
+</body>
+</html>

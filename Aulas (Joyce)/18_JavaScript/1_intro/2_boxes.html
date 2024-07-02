@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let nome="Senac"; 
+        // curso= "Técnico de informática" 
+
+        let nome = prompt('Entre com o nome da Escola');
+        let curso = prompt('Entre com o curso desejado');
+
+        //Concatenação
+        let saidaConcat = "Eu vou ao "+nome+" para o curso de "+curso+"!!!";
+       //Interpolar
+       var saidaInter = `Eu vou ao ${nome} para o curso ${curso} !!!`;
+       
+
+       //Incomum para usuários - console.log
+       console.log(saidaConcat);
+       console.log(saidaInter);
+
+       //alert -  chato porque trava a tela
+       alert(saidaConcat);
+       alert(saidaInter);
+
+       //Escrever no documento
+       document.write(saidaConcat);
+       document.write("<hr>");
+       document.write(saidaInter);
+       </script>
+</head>
+<body>
+    
+</body>
+</html>

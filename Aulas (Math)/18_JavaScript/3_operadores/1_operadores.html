@@ -1,14 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
- 
+
     </script>
 </head>
+
 <body>
-    
+    <script>
+        //fazem uma operação e retornam um resultado
+
+        //operador de atribuição
+        // atribui um valor à uma variável
+        let num = 25;//variável `num` RECEBE o valor 25 ou valor 25 é ATRIBUIDO à variável num 
+        document.write(num + "<br>")    //25
+
+        //acumulando
+        num += 15;
+        document.write(num + "<br>")    //40
+
+        //forma reduzida de acumular valores na variável
+        num += 20;//num = num + 20
+        document.write(num + "<br>")    //60
+
+        //incremento - aumentar de 1 em 1
+        num++;//num = num + 1
+        document.write(num + "<br>")    //61
+        num++;//num = num + 1
+        document.write(num + "<br>")      //62
+
+        //decremento - diminuir de 1 em 1
+        num--;//num = num - 1
+        document.write(num + "<br>")    //61
+        num--;//num = num - 1
+        document.write(num + "<br>")    //60
+
+        /*=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=--=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+        //operadores de concatenação
+        //operador de string
+
+        let nome = "João";
+        document.write(nome + "<br>")//Luiz
+        nome += " Roberto"
+        document.write(nome + "<br>")//Luiz Roberto
+        nome += " Santos"
+        document.write(nome + "<br>")//Luiz Roberto Santos
+
+        /*=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=--=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+        //Conversão de tipos ou Type Casting
+        document.write((5 + 3) + "<br>")
+        document.write((5 + "3") + "<br>")
+        document.write(("5" + "3") + "<br>") //Conversão implícita de número em texto
+
+        // parseInt() parseFloat() Number() String() Boolean()
+        document.write(("5" + String(3)) + "<br>")//Conveção explícita de número em texto
+        document.write((Number("5") + 3) + "<br>") //Conversão explicita de texto em número
+
+        /*=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=--=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+
+        document.write((5+3) + "<br>")//Adição
+        document.write((5-3) + "<br>")//Subtração
+        document.write((5*3) + "<br>")//Multiplicação
+        document.write((5/3) + "<br>")//Divisão
+        document.write((5%3) + "<br>")//Resto da divisão
+        document.write((5**3) + "<br>")//Potência
+
+    </script>
 </body>
+
 </html>

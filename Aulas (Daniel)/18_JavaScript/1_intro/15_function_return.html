@@ -65,17 +65,30 @@
         
                 document.write(somaTudo)
                 */
-        let abc = prompt("Digite primeiro numero");//10
-        let def = prompt("Digite segundo numero");//20
-        let ghi = prompt("Digite terceiro numero");//30
-        let jkl = prompt("Digite quarto numero");//40
+        //let abc = prompt("Digite primeiro numero");//10
+        //let def = prompt("Digite segundo numero");//20
+        //let ghi = prompt("Digite terceiro numero");//30
+        //let jkl = prompt("Digite quarto numero");//40
 
         // let soma1 = somaNumeros(abc, def)
         // let soma2 = somaNumeros(ghi, jkl)
 
-        let somaTudo = somaNumeros(somaNumeros(abc, def), somaNumeros(ghi, jkl))
+        //let somaTudo = somaNumeros(somaNumeros(abc, def), somaNumeros(ghi, jkl))
 
-        document.write(somaTudo)
+        // document.write(somaNumeros(somaNumeros(prompt("Digite primeiro numero"), prompt("Digite segundo numero")), somaNumeros(prompt("Digite terceiro numero"), prompt("Digite quarto numero"))))
+        document.write(
+            somaNumeros(
+                somaNumeros(
+                    prompt("Digite primeiro numero"),
+                    prompt("Digite segundo numero")
+                ),
+                somaNumeros(
+                    prompt("Digite terceiro numero"),
+                    prompt("Digite quarto numero")
+                )
+            )
+        )
+
     </script>
 </body>
 

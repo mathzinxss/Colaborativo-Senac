@@ -25,15 +25,15 @@
         document.write(num + "<br>");//60
 
         //Incremento - aumentar de 1 em 1
-        num ++;//num = num + 1
+        num++;//num = num + 1
         document.write(num + "<br>");
-        num ++;//num = num + 1
+        num++;//num = num + 1
         document.write(num + "<br>");
 
         //decremento - diminuir de 1 em 1
-        num --;//num = num - 1
+        num--;//num = num - 1
         document.write(num + "<br>");
-        num --;//num = num - 1
+        num--;//num = num - 1
         document.write(num + "<br>");
 
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////operador de concatenação
@@ -53,7 +53,7 @@
 
         /* parceInt() parceFloat() Number() String() Boolean() */
 
-        document.write(("5" + String (3)) + "<br>")//CONVERSÃO EXPLICITA DE NUMERO EM TEXTO
+        document.write(("5" + String(3)) + "<br>")//CONVERSÃO EXPLICITA DE NUMERO EM TEXTO
 
         document.write((Number("5") + 3) + "<br>")//CONVERSÃO EXPLICITA DE TEXTO EM NUMERO
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -64,7 +64,116 @@
         document.write(("5" / 3) + "<br>")//Divisão
         document.write(("5" % 3) + "<br>")//Porcentagem
         document.write(("5" ** 3) + "<br>")//Potencia - 5*5*5
+
+        document.write("<hr>")
+        document.write("Operadores de comparação <br>")
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /*Operadores de comparação*/
+        //comparam 2 valores (conteúdo) e retornam TRUE ou FALSE
+        // == igualdade - se tem o mesmo valor - não leva em consideração o tipo de dado
+        // === idênticas - se tem o mesmo valor e o mesmo tipo
+        document.write((5 == 3) + "<br>")//false
+        document.write((5 == "5") + "<br>")//true
+        document.write((5 === "5") + "<br>")//false
+        document.write(("5" === "5") + "<br>")//true
+        document.write((5 === 5) + "<br>")//true
+        //operador de negação - !
+        document.write((true) + "<br>")//true
+        document.write((false) + "<br>")//false
+
+        document.write((!true) + "<br>")//false
+        document.write((!false) + "<br>")//true
+
+        //simbolo para diferente SERIA <> - em JavaScript não existe
+        // != significa diferente - somente verifica o valor - não verifica tipo
+        // !== significa não idêntico - verifica vaor e tipo
+        document.write((5 != 3) + "<br>")//true
+        document.write(("5" != 5) + "<br>")//false
+        document.write(("5" !== 5) + "<br>")//true
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        document.write("<hr>")
+        document.write("Operadores de maior e menor <br>")
+        //Valores maiores e menores
+        document.write((5 > 3) + "<br>")//true
+        document.write(("5" > 3) + "<br>")//true
+        document.write((5 < 3) + "<br>")//false
+
+        //Valores maiores ou igual e menores ou igual
+        document.write((5 >= 3) + "<br>")//true
+        document.write(("5" >= 3) + "<br>")//true
+        document.write((5 <= 3) + "<br>")//false
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        document.write("<hr>")
+        document.write("Operadores lógicos <br>")
+        //vão unir mais de uma coparação, porém trarão somente um resultado: true ou false
+
+        //AND => && -
+        //para retornar VERDADEIRO todas as comparações devem ser verdadeiras 
+        document.write(5 > 3 && 5 != 8) //(true && true) => (true)
+        document.write("<br>")//
+        document.write(5 > 30 && 5 != 8) //(false && true) => (false)
+        document.write("<br>")//
+        document.write(5 > 30 && 5 != 5) //(true && false) => (false)
+        document.write("<br>")// 
+
+        //OR => ||
+        //para retornar verdaeiro basta que um seja verdadeiro 
+        document.write(5 > 3 || 5 != 8) //(true || true) => (true)
+        document.write("<br>")//
+        document.write(5 < 3 || 5 != 8) //(false || false) => (true)
+        document.write("<br>")//
+        document.write(5 < 3 || 5 == 8) //(false || false) => (false)
+        document.write("<br>")//
+
+        //XOR - ^
+        // ou ÚNICO ou EXCLUSIVO
+        document.write("XOR <br>")//
+        document.write(5 > 3 ^ 5 != 8) //(true ^ true) => (false)
+        document.write("<br>")//
+        document.write(5 > 3 ^ 5 == 8) //(true ^ false) => (true)
+        document.write("<br>")//
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        document.write("<hr>")
+        document.write("Tabela verdade <br>")
+        
+        /*
+        1aP     2aP     &&     ||     XOR
+        V       V       V      V      F
+        V       F       F      V      V
+        F       V       F      V      V
+        F       F       F      F      F
+        */
+       /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+       document.write("<hr>")
+       document.write("Operador ternário <br>")
+       let abc = (5 !== 5)?("Firmeza"):("Mané")
+       document.write(abc + "<br>");     
+
+       /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+       document.write("<hr>")
+       document.write("Objeto math <br>")
+       document.write( Math.round (25.6) + "<br>");//ARREDONDA PARA O MAIS PRÓXIMO//26
+       document.write( Math.round (25.2) + "<br>");//ARREDONDA PARA O MAIS PRÓXIMO//25
+       document.write( Math.ceil (25.2) + "<br>");//ARREDONDA PARA CIMA//26
+       document.write( Math.floor (25.9) + "<br>");//ARREDONDA PARA BAIXO//25
+
+       document.write( Math.PI + "<br>");
+       document.write( Math.pow (5,3) + "<br>");//potencia
+
+       //raiz quadrada
+       document.write( Math.sqrt(25) + "<br>");//raiz quadrada
+
+       //outras raizes
+      //quadrada
+      document.write( Math.pow(25, 1/2) + "<br>");//raiz quadrada
+      document.write( Math.pow(125,1/3) + "<br>");//raiz quadrada
+
+      document.write( (125 ** (1/3)) + "<br>");//raiz quadrada
     </script>
+
 </body>
 
 </html>

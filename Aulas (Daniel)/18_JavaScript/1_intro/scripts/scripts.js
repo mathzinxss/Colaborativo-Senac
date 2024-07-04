@@ -1,18 +1,14 @@
-/*
-* Author
-* Parametros
-* o que faz
-*
-*
-*/
-function calculaIdade() {
+/**
+ * Author:
+ * parametros:
+ * o que faz
+ *  o que retorna
+ */
 
+function calculaIdade() {
     let nasc;
     nasc;
-
-    nasc = prompt("Qual o seu ano de nascimento?")
-
+    nasc = prompt("Entre com o ano do seu nascimento")
     nasc = Number(2024) - Number(nasc)
-
-    document.write(`No final de 2024 essa pessoa vai ter ${nasc} anos`)
+    document.write(`No final de 2024 essa pessoa vai ter ${nasc} anos!`)
 }

@@ -1,45 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="scripts/scripts.js"></script>
     <script>
-        // Cannot set properties of null (setting 'value')
-        // window.document.getElementById('um').value="Conteudo dinâmico"
+/* Cannot set properties of null (setting 'value')
+window.document.getElementById('um').value="Conteúdo dinâmico" */
     </script>
 </head>
-
 <body>
-
+    
     <button id="um" type="button">Evento clique</button>
+    <button id="dois" type="button">Evento duplo clique</button>
+    <button id="tres" type="button">Evento mouse em cima</button>
+    <button id="quatro" type="button">Evento mouse fora</button>  
+     
+    <script> 
+    window.document.getElementById('um').innerHTML="Conteúdo dinâmico";
 
-    <button id="dois" type="button">Evento Duplo Clique</button>
+    document.getElementById('um').onclick = calculaIdade;
 
-    <button id="tres" type="button">Evento Mouse em cima</button>
+    document.getElementById('dois').ondblclick = function(){
+        calculaIdade();
+    }
 
-    <button id="quatro" type="button">Evento Mouse Fora</button>
-    <script>
-        window.document.getElementById('um').innerHTML = "Conteudo dinâmico"
-
-        document.getElementById('um').onclick = calculaIdade;
-
-        document.getElementById('dois').ondblclick = function(){
-            calculaIdade()
-        }
-
-        document.getElementById('tres').onmouseover = function(){
-            calculaIdade()
-        }
-        document.getElementById('quatro').onmouseout = function(){
-            calculaIdade()
-        }
-        //arrow function - função seta
-        
-    </script>
-
+    document.getElementById('tres').onmouseover = function(){
+        calculaIdade();
+    }
+ document.getElementById('quatro').onmouseout = function(){
+        calculaIdade();
+    }
+   
+    //arrow function - função seta
+    /*document.getElementById('quatro').onmouseout = ()=>{
+       calculaIdade();} */
+    
+     </script>
 </body>
-
 </html>

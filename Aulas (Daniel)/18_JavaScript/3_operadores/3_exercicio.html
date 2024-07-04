@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    </head>
+</head>
+
 <body>
     <script>
-//////////////////////////////////////////////////////////////////////////
-//entrar com dois números - base e altura de um retângulo
-//calcular a área do retângulo
+        //////////////////////////////////////////////////////////////////////////
+        //entrar com dois números - base e altura de um retângulo
+        //calcular a área do retângulo
 
-// Função para calcular a área do retângulo
-function calcularAreaRetangulo(base, altura) {
-    return base * altura;
-}
+        // Função para calcular a área do retângulo
+        function calcularAreaRetangulo(base, altura) {
+            return base * altura;
+        }
 
-// Obtendo entrada do usuário
-let base = parseFloat(prompt("Digite a base do retângulo:"));
-let altura = parseFloat(prompt("Digite a altura do retângulo:"));
+        // Obtendo entrada do usuário
+        let base = parseFloat(prompt("Digite a base do retângulo:"));
+        let altura = parseFloat(prompt("Digite a altura do retângulo:"));
 
-// Calculando a área
-let area = calcularAreaRetangulo(base, altura);
+        // Calculando a área
+        let area = calcularAreaRetangulo(base, altura);
 
-// Exibindo o resultado
-document.write(`A área do retângulo com base ${base} e altura ${altura} é ${area}.`);
+        // Exibindo o resultado
+        document.write(`A área do retângulo com base ${base} e altura ${altura} é ${area}.<br>`);
 
 
-/////////////////////////////////////////////////////////////////////////
-//entrar com dois números que representarão os dois catetos de um triângulo retângulo
-//calcular a hipotenusa
-// Função para calcular a hipotenusa de um triângulo retângulo
-function calcularHipotenusa(cateto1, cateto2) {
-    // Aplicando o teorema de Pitágoras: hipotenusa = sqrt(cateto1^2 + cateto2^2)
-    let hipotenusa = Math.sqrt(cateto1 * cateto1 + cateto2 * cateto2);
-    return hipotenusa;
-}
+        /////////////////////////////////////////////////////////////////////////
+        //entrar com dois números que representarão os dois catetos de um triângulo retângulo
+        //calcular a hipotenusa
+        // Função para calcular a hipotenusa de um triângulo retângulo
+        function calcularHipotenusa(cateto1, cateto2) {
+            // Aplicando o teorema de Pitágoras: hipotenusa = sqrt(cateto1^2 + cateto2^2)
+            let hipotenusa = Math.sqrt(cateto1 * cateto1 + cateto2 * cateto2);
+            return hipotenusa;
+        }
 
-// Obtendo entrada do usuário
-let cateto1 = parseFloat(prompt("Digite o valor do primeiro cateto:"));
-let cateto2 = parseFloat(prompt("Digite o valor do segundo cateto:"));
+        // Obtendo entrada do usuário
+        let cateto1 = parseFloat(prompt("Digite o valor do primeiro cateto:"));
+        let cateto2 = parseFloat(prompt("Digite o valor do segundo cateto:"));
 
-// Verificando se os valores inseridos são válidos (números positivos)
-if (cateto1 > 0 && cateto2 > 0) {
-    // Calculando a hipotenusa
-    let hipotenusa = calcularHipotenusa(cateto1, cateto2);
-    
-    // Exibindo o resultado
-    document.write(`A hipotenusa do triângulo retângulo com catetos ${cateto1} e ${cateto2} é ${hipotenusa}.`);
-} else {
-    document.write("Os valores dos catetos devem ser números positivos.");
-}
+        // Verificando se os valores inseridos são válidos (números positivos)
+        if (cateto1 > 0 && cateto2 > 0) {
+            // Calculando a hipotenusa
+            let hipotenusa = calcularHipotenusa(cateto1, cateto2);
+
+            // Exibindo o resultado
+            document.write(`A hipotenusa do triângulo retângulo com catetos ${cateto1} e ${cateto2} é ${hipotenusa}.`);
+        } else {
+            document.write("Os valores dos catetos devem ser números positivos.");
+        }
 
     </script>
 </body>
+
 </html>

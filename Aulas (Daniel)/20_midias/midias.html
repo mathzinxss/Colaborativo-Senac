@@ -1,60 +1,73 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
-   <title>Mídias</title>
-   <meta charset="utf-8">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap" rel="stylesheet">
- 
- <!--
+  <title>Mídias</title>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap" rel="stylesheet">
+
+  <!--
    arquivo TTF significa = true type font
  -->
-<style type="text/css">   
-  @font-face{
-   font-family: palmeiras;
-   src:url('PAPYRUS.TTF')
-  }
-  .especial{
-   font-family: palmeiras;
-  }
-  /* // <uniquifier>: Use a unique and descriptive class name
+  <style type="text/css">
+    @font-face {
+      font-family: palmeiras;
+      src: url('PAPYRUS.TTF')
+    }
+
+    .especial {
+      font-family: palmeiras;
+    }
+
+    /* // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 100 to 400 */
 
-.flamengo{
-  font-family: "Playwrite US Trad", cursive;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-}
-</style>
+    .flamengo {
+      font-family: "Playwrite US Trad", cursive;
+      font-optical-sizing: auto;
+      font-weight: 100;
+      font-style: normal;
+    }
+  </style>
 </head>
 
 <body>
-<h2 class="especial">Mídias</h2>
+  <h2 class="especial">Mídias</h2>
 
-<p class="flamengo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ligula tortor, luctus fringilla lacinia id, posuere vel purus. Donec faucibus mollis ex vulputate pretium. Nulla.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ligula tortor, luctus fringilla lacinia id, posuere vel purus. Donec faucibus mollis ex vulputate pretium. Nulla.</p>
+  <p class="flamengo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ligula tortor, luctus fringilla
+    lacinia id, posuere vel purus. Donec faucibus mollis ex vulputate pretium. Nulla.Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit. Sed ligula tortor, luctus fringilla lacinia id, posuere vel purus. Donec faucibus
+    mollis ex vulputate pretium. Nulla.</p>
 
-<h2 class="especial">Mapa</h2>
-
-<p>
-
-
-</p>
-
-<h2 class="especial">Vídeo HTML5</h2>
+  <h2 class="especial">Mapa</h2>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.121806704425!2d-46.69480352454724!3d-23.528121010372093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8775663b04f%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1720207071215!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <p>
 
 
+  </p>
 
-<h2 class="especial">Audio</h2>
+  <h2 class="especial">Vídeo HTML5</h2>
+  <!-- <video autoplay controls > -->
+  <video id="bird">
+    <source src="Video/video.mp4" type="video/mp4">
+    <source src="Video/video.ogv" type="video/ogv">
+    <source src="Video/video.webm" type="video/webm">
+    
+  </video>
+  <button type="button" onclick="document.getElementById('bird').play()">Tocar</button>
+  <button type="button" onclick="document.getElementById('bird').pause()">Parar</button>
 
+  <h2 class="especial">Audio</h2>
+  <audio autoplay controls>
+    <source src="AUDIO/Fifth.mp3" type="audio/mp3">
+  </audio>
+  <h2 class="especial">Vídeo Youtube</h2>
 
-
-<h2 class="especial">Vídeo Youtube</h2>
-
-<p>
-
-</p>
+  <p>
+    <iframe src="https://parceiros.impacta.com.br/" frameborder="2" width="600" height="400">
+  </p>
 
 
 

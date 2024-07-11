@@ -18,5 +18,25 @@
     <p class="formata">Paragrafo 1</p>
     <p>Paragrafo 2</p>
     <p>Paragrafo 3</p>
+    <hr>
+
+    <script>
+        let um = document.getElementById('um');
+        document.write(um+"<br>")
+        document.write(um.tagName+"<br>")
+        document.write(um.className+"<br>")
+        document.write(um.type+"<br>")
+        document.write(um.id+"<br>")
+        document.write(um.value+"<br>")
+        document.write(um.style+"<br>")//[object CSS2Properties]
+        document.write(um.style.color+"<br>")//red
+        document.write(um.style.fontFamily+"<br>")
+
+        // Ao alterar o conteúdo da viariável do JS automaticamente muda os atributos
+        // HTML e CSS
+        um.style.color='green'
+        um.value='Campus Party'
+        
+        </script>
 </body>
 </html>

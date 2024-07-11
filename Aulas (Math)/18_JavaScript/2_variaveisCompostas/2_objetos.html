@@ -1,14 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-       
+
     </script>
 </head>
+
 <body>
-    
+    <script>
+        let frutas = {
+            'Vermelho': 'Maçã',
+            'Amarelo': 'Banana',
+            'Verde': 'Limão',
+            'Azul': 'BlueBerry'
+        }
+        console.log(frutas)
+        document.write(frutas.Verde + '<br>')
+        frutas.Laranja = 'Mexerica'
+        console.log(frutas)
+        document.write(frutas.Laranja + '<br>')
+        document.write('<hr>')
+
+        /*===============================================================================================================================================================*/
+        let frutas2 = {
+            "Banana": {
+                'tipo': 'nanica',
+                'qtde': 24,
+                'disponivel': true
+            },
+            "Laranja": {
+                "tipo": "lima",
+                "qtde": 12,
+                "disponivel": true
+            },
+            "melao": {
+                "tipo": "bola",
+                "qtde": 12,
+                "disponivel": false
+            }
+        }
+        console.log(frutas2)
+        document.write(frutas2.Banana.qtde + '<br>')
+
+         /*===============================================================================================================================================================*/
+         let frutas3 = {
+            "Banana": {
+                'tipo': 'nanica',
+                'qtde': 24,
+                'disponivel': true
+            },
+            "Laranja": {
+                "tipo": "lima",
+                "qtde": 12,
+                "disponivel": true
+            },
+            "melao": {
+                "tipo": "bola",
+                "qtde": 12,
+                "disponivel": false
+            },
+            "extras":['uva', 'pera', 'maçã']
+         }
+
+         console.log(frutas3)
+         document.write(frutas3.Banana.tipo[2] + '<br>')
+         document.write(frutas3.extras[2] + '<br>')
+    </script>
 </body>
+
 </html>

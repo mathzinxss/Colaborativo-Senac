@@ -13,10 +13,38 @@
     <hr>
     <input type="button" id="dois" value="Ui" class="formata">
     <hr>
-    <input type="button" id="tres" value="Ai" >
+    <input type="button" id="tres" value="Ai" class="formata">
     <hr>
-    <p class="formata">Paragrafo 1</p>
+    <p class="formata" id="texto">Paragrafo 1</p>
     <p>Paragrafo 2</p>
     <p>Paragrafo 3</p>
+
+    <script>
+        let formata = document.getElementsByClassName('formata');
+        //variavel formata será um array
+        //em cada indice desse array terá um objeto que representa um elemento HTML
+        console.log(formata)
+        //alert(formata)
+        document.write(formata[0].id + "<br>")//um
+        document.write(formata[1].id + "<br>")//dois
+        document.write(formata[3].id + "<br>")//texto
+        
+        document.write(formata[0].tagName + "<br>")//INPUT
+        document.write(formata[1].tagName + "<br>")//INPUT
+        document.write(formata[3].tagName + "<br>")//p
+
+        document.write(formata[0].value + "<br>")//INPUT
+        document.write(formata[1].value + "<br>")//INPUT
+        document.write(formata[2].innerHTML + "<br>")//P
+
+        document.getElementById("tres").addEventListener('click',()=>{
+            formata[0].value = "Massagem nos pés"
+            formata[1].value = "Welcome Maguila"
+            formata[3].innerHTML = "2 semanas de férias é pouco"
+        })
+
+
+    </script>
+
 </body>
 </html>

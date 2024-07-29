@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.1.1.min.js"></script>
+</head>
+
+<body>
+    <ol id="cantores">
+        <li>kyan</li>
+        <li>ryu</li>
+        <li>derek</li>
+        <li>mc ig</li>
+    </ol>
+
+    <!-- p*2>input*2-->
+    <p><input type="text" id="entrada" value="Pensamento Positivo"></p>
+    <p><input type="button" id="aperte" value="Clique Aqui!"></p>
+
+    <p id="veja">Bela, recatada e do lar</p>
+    <p id="escute">London Calling</p>
+
+    <script>
+        //$('li').click()
+        //$('li').click(()=>{})
+        $('li').click(function () {
+            // let info=$(this).text()
+            // alert(info)
+
+            
+        })
+        $('#cantores').on('click','li',function(){
+            alert($(this).text())
+        })
+
+        $('#aperte').click(function () {
+            let entrada = $('#entrada').val()
+            // $('#entrada').val('')
+            //  $('#entrada').focus()
+            $('#entrada').val('').focus()
+
+            $('<li>').text(entrada)
+                     .css({"color" :"red",
+                     "font-family":"arial",
+                     "border":"1px solid black"})
+                     .appendTo("#cantores")
+                     .list;
+        })
+    </script>
+</body>
+
+</html>

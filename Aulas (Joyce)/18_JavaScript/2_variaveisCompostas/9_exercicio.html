@@ -1,27 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        p{
-            border:1px solid black;
+        * {
+            margin-top: 5px;
+            padding: 0;
+
+        }
+
+        p {
+            border: 1px solid black;
+            margin-left: 10px;
+            padding: 0 10px;
+            border-radius: 5px;
+
+        }
+
+        .borda {
+            /* Faz o parágrafo se ajustar ao tamanho do conteúdo */
+            display: inline-block;
+            /* Define a borda */
+            border: 2px solid black;
+            /* Impede quebra de linha */
+            white-space: nowrap;
+            /* Adiciona um pouco de espaço interno */
+            padding: 5px;
         }
     </style>
     <script>
-    
+        window.onload = function () {
+            document.getElementById("botao").addEventListener("click", function () {
+                document.getElementById("texto").style.backgroundColor = document.getElementById("fundo").value;
+                document.getElementById("texto").style.color = document.getElementById("fonte").value;
+                document.getElementById("texto").innerText = document.getElementById("teste").value;
+                texto.style.padding = '0 20px';
+            });
+
+            function updateText() {
+                var paragrafo = document.getElementById('texto');
+                var novoTexto = document.getElementById('teste').value;
+
+                // Atualiza o texto do parágrafo
+                paragrafo.textContent = novoTexto;
+
+                // Cria um elemento span temporário para medir a largura do texto
+                var tempSpan = document.createElement('span');
+                tempSpan.style.whiteSpace = 'nowrap';  // Impede quebra de linha
+                tempSpan.style.visibility = 'hidden';  // Torna o span invisível
+                tempSpan.textContent = novoTexto;  // Define o texto para o span
+
+                // Adiciona o span ao body para medir sua largura
+                document.body.appendChild(tempSpan);
+                var newWidth = tempSpan.offsetWidth;  // Mede a largura do texto
+
+                // Remove o span temporário do body
+                document.body.removeChild(tempSpan);
+
+                // Define a largura do parágrafo de acordo com a largura medida
+                paragrafo.style.width = newWidth + 'px';
+            }
+
+        }
     </script>
 </head>
+
 <body>
 
-    <input type="password" id="entrada"><br>
+    Senha: <input type="password" id="senha"><br>
     Fundo: <input type="color" id="fundo"><br>
     Fonte: <input type="color" id="fonte"><br>
-    <input type="button" id="botao" value="Entrar Info">
+    Texto: <input type="text" id="teste"><br>
+    <input type="button" id="botao" value="Entrar Informação"><br>
 
-    <p id="texto">Texto</p>
-
+    <hr>
+    <p id="texto" class="borda">Texto</p>
 
 </body>
+
 </html>

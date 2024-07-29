@@ -14,28 +14,29 @@
    arquivo .ttf significa true type font
  -->
    <style type="text/css">
-      @font-face{
+      @font-face {
          font-family: palmeiras;
          src: url('PAPYRUS.TTF');
       }
 
-.especial{
-   font-family: palmeiras;
-}
+      .especial {
+         font-family: palmeiras;
+      }
 
-.playfair-display-botafogo{
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-}
+      .playfair-display-botafogo {
+         font-family: "Playfair Display", serif;
+         font-optical-sizing: auto;
+         font-weight: 100;
+         font-style: normal;
+      }
    </style>
 </head>
 
 <body>
    <h2 class="especial">Mídias</h2>
 
-   <p class="playfair-display-botafogo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ligula tortor, luctus fringilla lacinia id, posuere
+   <p class="playfair-display-botafogo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ligula tortor,
+      luctus fringilla lacinia id, posuere
       vel purus. Donec faucibus mollis ex vulputate pretium. Nulla.Lorem ipsum dolor sit amet, consectetur adipiscing
       elit. Sed ligula tortor, luctus fringilla lacinia id, posuere vel purus. Donec faucibus mollis ex vulputate
       pretium. Nulla.</p>
@@ -48,25 +49,25 @@
    </p>
 
    <h2 class="especial">Vídeo HTML5</h2>
+   <!-- <vídeo autoplay controls> -->
+   <video id="bird" controls>
+      <source src="Video/video.mp4" type="video/mp4" id="filme">
 
-
+   </video>
+   <button type="button" onclick="document.getElementsById('bird').play()">Tocar</button>
+   <button type="button" onclick="document.getElementsById('bird').pause()">Parar</button>
 
    <h2 class="especial">Audio</h2>
 
-
+   <audio autoplay controls>
+      <source src="AUDIO/Fifth.mp3" type="audio/mp3">
+   </audio>
 
    <h2 class="especial">Vídeo Youtube</h2>
 
    <p>
-
+      <iframe src="https://youtu.be/Ce4kUpqwFJY?si=3rrQl5yQiyPoje8d" frameborder="2" width="600" height="400"></iframe>
    </p>
-
-
-
-
-
-
-
 
 
 </body>

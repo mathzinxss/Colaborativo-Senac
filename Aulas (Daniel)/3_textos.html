@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-<meta charset="utf-8">
-<title>HTML 5 – A Nova Onda</title>
-<!--
-    linkado é mais PERFORMATICO que o importado
-    https://www.csszengarden.com/
--->
-<link rel="stylesheet"  href="importado.css">
-<style>
-    /*incorporado na pagina atraves da TAG STYLE.
-    Se houver colisão ficará velendo a propriedade declarada no inline, pois o 
-    mais proximo do conteudo
-    */
-p{
-    font-size: 16px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color:blue;
-}
-</style>
-</head>
-<body>
-<!-- 
-O estilo inline é o MAIS ESPECIFICO
-O incorporado tem especificidade MEDIA
-Quanto mais PROXIMO do elemento mais ESPECIFICO será o estilo
- -->
-<h3 class="impar" style="text-align: center;font-size: 32px;color:red">Por que as pessoas entram na sua vida?</h3>
 
-	<p id="um" class="impar" style="font-size: 20px;font-family: Arial, Helvetica, sans-serif;">Pessoas entram na sua vida por uma "Razão", uma "Estação" ou uma "Vida Inteira". Quando
+<head>
+	<meta charset="utf-8">
+	<title>HTML 5 – A Nova Onda</title>
+	<style>
+		/*
+		negrito: 
+        <b> - depreciada - fisica - não semantica
+        <strong> - recomendada - "semantica" - logica
+        
+        italico
+        <i> -  depreciada - fisica - não semantica 
+         <em> - recomendada - "semantica" - logica    
+
+         <span>   
+
+
+         Propriedade display : como a caixa deve ser exibida
+
+         display:block => 100%parent dela, porem PODE SER ALTERADO O WIDTH E O HEIGHT
+         display:inline => adequar ao conteudo, ficara alinhada - "em linha" - com o antecessor e o posterior
+            e as propriedaes WIDTH E HEIGHT NAO PODEM SER ALTERADAS
+
+		*/
+	</style>
+</head>
+
+<body>
+	<h3 class="impar">Por que as pessoas entram na sua vida?</h3>
+
+	<p id="um" class="impar">Pessoas entram na sua vida por uma "Razão", uma "Estação" ou uma "Vida Inteira". Quando
 		você percebe qual deles é, você vai saber o que fazer por cada pessoa.</p>
-	<p id="dois" class="par" style="font-size: 20px;font-family: Arial, Helvetica, sans-serif;">Quando alguém está em sua vida por uma "Razão"... é, geralmente, para suprir uma
+
+	<p id="dois" class="par">Quando alguém está em sua vida por uma "Razão"... é, geralmente, para suprir uma
 		necessidade que você demonstrou. Elas vêm para auxiliá-lo numa dificuldade, te fornecer orientação e apoio,
 		ajudá-lo física, emocional ou espiritualmente. Elas poderão parecer como uma dádiva de Deus, e são! Elas estão
 		lá pela razão que você precisa que eles estejam lá. Então, sem nenhuma atitude errada de sua parte, ou em uma
@@ -38,7 +41,8 @@ Quanto mais PROXIMO do elemento mais ESPECIFICO será o estilo
 		essas pessoas morrem. Ás vezes, eles simplesmente se vão. Ás vezes, eles agem e te forçam a tomar uma posição. O
 		que devemos entender é que nossas necessidades foram atendidas, nossos desejos preenchidos e o trabalho delas,
 		feito. As suas orações foram atendidas. E agora é tempo de ir.</p>
-	<p id="tres" class="impar" style="font-size: 20px;font-family: Arial, Helvetica, sans-serif;">Quando pessoas entram em nossas vidas por uma "Estação", é porque chegou sua vez de
+
+	<p id="tres" class="impar">Quando pessoas entram em nossas vidas por uma "Estação", é porque chegou sua vez de
 		dividir, crescer e aprender. Elas trazem para você a experiência da paz, ou fazem você rir. Elas poderão
 		ensiná-lo algo que você nunca fez. Elas, geralmente, te dão uma quantidade enorme de prazer... Acredite! É real!
 		Mas somente por uma "Estação".</p>
@@ -105,6 +109,7 @@ Quanto mais PROXIMO do elemento mais ESPECIFICO será o estilo
 		Sem esforço sabemos distinguir nossos amigos hoje te procurei simplesmente para dizer:
 		Estou feliz porque te amo meu amigo.
 		És muito importante para mim.
-</body>
-</html>
 
+</body>
+
+</html>

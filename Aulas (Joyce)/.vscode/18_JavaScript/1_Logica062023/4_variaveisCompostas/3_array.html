@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const planes = ['ERJ95','A380','B747'];
+       document.write(planes.length);//6
+       document.write("<hr>");  3
+       //for(i=0;i<=5;i++)
+       //for(i=0;i<6;i++){
+       for(i=0; i< planes.length; i++){
+            document.write(i +' - '+ planes[i] + "<br>");
+       }
+       document.write("<hr>");
+       ////////////////////////////////////////////////
+       //for...in
+       // a variavel x recebera o indice do eleemnto do array
+       //para variavel X em array oalnes
+       for(x in planes){
+            document.write(x +' - '+ planes[x]+"<br>");
+       }
+       document.write("<hr>");
+       ////////////////////////////////////////////////
+       //for...of
+       // a variavel x recebera o conteudo do eleemnto do array
+       //para var y do array palnes
+       for(y of planes){
+            document.write(y +"<br>");
+       }
+       document.write("<hr>");
+       ////////////////////////////////////////////////
+       //foreach - para cada
+
+       let soma = 0;
+       const num = [15,3,12];
+       function somaItens(item){
+            soma = soma + item;
+       }
+
+       num.forEach(somaItens)
+       document.write(soma +"<br>");
+
+    </script>
+</body>
+</html>

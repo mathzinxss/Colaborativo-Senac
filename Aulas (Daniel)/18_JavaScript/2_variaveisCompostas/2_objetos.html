@@ -4,11 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-       
-    </script>
+    
 </head>
 <body>
-    
+    <script>
+        //JSON - JavaScriptObjectNotation
+       //let frutas = {"Vermelho":"Maçã","Amarelo":"Banana","Verde":"Kiwi","Azul":"BlueBerry"}
+       let frutas = {   
+                        "Vermelho":"Maçã",
+                        "Amarelo":"Banana",
+                        "Verde":"Kiwi",
+                        "Azul":"BlueBerry"
+                    }
+        console.log(frutas)      
+        document.write(frutas+"<br>")   
+        document.write(frutas.Verde+"<br>")      //kiwi
+        frutas.Laranja = "Mexirica"
+        console.log(frutas) 
+        document.write(frutas.Laranja+"<br>")
+        document.write("<hr>")
+        //////////////////////////////////////////////////////////////////////
+        let frutas2 = {
+                        "banana":{  "tipo":"nanica",
+                                    "qtde":24,
+                                    "disponivel":true
+                                },
+                        "laranja":{ "tipo":"lima",
+                                    "qtde":12,
+                                    "disponivel":true
+                                },
+                        "melao":{   "tipo":"bola",
+                                    "qtde":2,
+                                    "disponivel":false
+                                }
+                    }
+        console.log(frutas2)
+        document.write(frutas2.banana.qtde+"<br>")//24
+        document.write(frutas2.laranja.tipo+"<br>")//lima    
+         document.write(frutas2.melao.disponivel+"<br>")//false    
+
+         document.write("<hr>")
+        //////////////////////////////////////////////////////////////////////
+        let frutas3 = {
+                        "banana":{  "tipo":["nanica","maçã","prata"],
+                                    "qtde":24,
+                                    "disponivel":true
+                                },
+                        "laranja":{ "tipo":"lima",
+                                    "qtde":12,
+                                    "disponivel":true
+                                },
+                        "melao":{   "tipo":"bola",
+                                    "qtde":2,
+                                    "disponivel":false
+                                },
+                        "extras":['uva','pera','maçã']        
+
+                    }
+        console.log(frutas3)
+        document.write(frutas3.banana.tipo[2]+"<br>")//prata
+        document.write(frutas3.extras[2]+"<br>")//maçã
+    </script>
 </body>
 </html>

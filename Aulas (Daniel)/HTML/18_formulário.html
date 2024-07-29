@@ -20,9 +20,9 @@
             Não mostrará as informações na URL 
             As informações serão enviadas fechadas no corpo da requisição
         -->
-        <figure>
-            <img src="../catalogos/bueiros/b003.jpg" alt="bueiros">
-        </figure>
+    <figure>
+        <img src="../catalogos/bueiros/b003.jpg" alt="bueiros">
+    </figure>
     <form action="https://www.edupretel.com.br/html5/mensagem.php" method="post">
 
         <fieldset>
@@ -50,7 +50,7 @@
             </p>
         </fieldset>
 
-       
+
 
         <fieldset>
             <legend>Listas</legend>
@@ -112,30 +112,17 @@
             <fieldset>
                 <legend>Expressões Regulares</legend>
                 <p>
-                <label for="cpf">CPF</label>
-                <input type="text"
-                    name="cpf"
-                    id="cpf"
-                  maxlength="14"
-                  minlength="14"
-                  required
-                  pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
-                  title="Digite o CPF no formato nnn.nnn.nnn-nn"
-                  oninvalid="alert('CPF invalido!!!!!')"
-
-                  >
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" id="cpf" maxlength="14" minlength="14" required
+                        pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite o CPF no formato nnn.nnn.nnn-nn"
+                        oninvalid="alert('CPF invalido!!!!!')">
                 </p>
                 <p>
                     <label for="cnpj">CNPJ</label>
-                    <input type="text"
-                        name="cnpj"
-                        maxlength="18"
-                        minlength="18"
-                        required
-                        pattern="\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}"
-                        title="Digite o CNPJ no formato nn.nnn.nnn./0000-0"
+                    <input type="text" name="cnpj" maxlength="18" minlength="18" required
+                        pattern="\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}" title="Digite o CNPJ no formato nn.nnn.nnn./0000-0"
                         oninvalid="alert('CNPJ invalido')">
-                        
+
                 </p>
             </fieldset>
 
@@ -146,7 +133,7 @@
 
         <p id="botoes">
             <input type="submit" value="Enviar Formulário">
-            <input type="reset"value="Redefinir o formulario">
+            <input type="reset" value="Redefinir o formulario">
             <input type="button" value="Dar um aviso" onclick="javascript:alert('Vai ter ferias em Julho!!!')">
             <input type="button" value="Dar um aviso 2" onclick="alert('Vai ter ferias em Julho!!!')">
             <input type="button" value="imprimir formulario" onclick="window.print()">

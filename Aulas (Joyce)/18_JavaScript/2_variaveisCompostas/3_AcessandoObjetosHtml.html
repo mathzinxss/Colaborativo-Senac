@@ -4,19 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
     
-    </script>
 </head>
 <body>
     <input type="button" id="um" value="Oi" class="formata" style="color:red;font-family: Arial;">
     <hr>
-    <input type="button" id="dois" value="Ui" class="formata">
+    <input type="button" id="dois" value="Interferir no 3" class="formata">
     <hr>
     <input type="button" id="tres" value="Ai" >
     <hr>
     <p class="formata">Paragrafo 1</p>
-    <p>Paragrafo 2</p>
+    <p id="texto">Paragrafo 2</p>
     <p>Paragrafo 3</p>
+    <hr>
+
+    <script>
+    let um = document.getElementById('um');
+    document.write(um+"<br>")// [object HTMLInputElement]
+    document.write(um.tagName+"<br>")
+    document.write(um.tagName+"<br>")
+    document.write(um.className+"<br>")
+    document.write(um.type+"<br>")
+    document.write(um.id+"<br>")
+    document.write(um.value+"<br>")
+    document.write(um.style+"<br>")//[object CSS2Properties]
+    document.write(um.style.color+"<br>")//red
+    document.write(um.style.fontFamily+"<br>")
+
+    //ao alterar o conteudo da variavel o JS automaticamente muda os atributos 
+    //HTML e CSS
+    um.style.color="green"
+    um.value="Campus Party"
+
+
+    //document.getElementById('dois').addEventListener('click',()=>{})
+    document.getElementById('dois').addEventListener('click',()=>{
+        let tres = document.getElementById('tres');
+        let texto = document.getElementById('texto')
+
+
+        tres.value="Ferias!!!!!!!!!"
+        tres.style.backgroundColor = "black"
+        tres.style.color="white"
+        tres.style.padding="10px";
+        tres.style.border="double red 5px"
+
+        //texto.innerText = "Madonna no Rio - Copacabana"
+        //texto.innerText = "Madonna no <strong>Rio</strong> - Copacabana"
+        texto.innerHTML = "Madonna no <strong>Rio</strong> - Copacabana"
+    })
+    </script>
 </body>
 </html>

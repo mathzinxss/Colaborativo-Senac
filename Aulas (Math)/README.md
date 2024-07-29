@@ -1,3 +1,3 @@
 # **AULAS SENAC**
 
-[Posicionamento](#../../9_posicionamento/)
+[Posicionamento](https://github.com/mathzinxss/Colaborativo-Senac/tree/main/Aulas%20(Math)/9_posicionamento)

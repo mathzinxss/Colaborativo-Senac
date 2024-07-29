@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script type="text/javascript" language="javascript">
+/*
+AJAX - ASYNCHRONUS JAVASCRIPT AND XML
+
+OBJETO - XMLHttpRequest - nao faz parte do DOM
+padrozinado pelo w3c
+
+Carregamento de conteudos c/ JavaScript - xml, txt, json
+
+Criado pela Microsoft - em 2006 w3c transformou em recomendacao oficial
+
+sincrona - uma acao que eu disparo e espero o retorno dela para fazer outra coisa
+
+Assincrono - disparo um link e continuo navegando na pagina, executando outras acoes(por debaixo dos panso)
+*/
+
+					
+				//implementacao do ajax
+				//criar o objeto XMLHttpRequest
+				//atraves dele faremos todas as nossas requisicoes
+				
+				
+				//propriedade do obj XMLHttpRequest - pega um tipo de resposta do servidor - uma alteracao de status na comunicacao cliente servidor
+				
+					//alert(ajax.readyState);
+						/*
+						ajax.readyState
+						0 - comunicacao nao iniciada
+						1 - inicio de comunicacao
+						2 - imicio de requisicao - algo foi encaminhado para o servidor
+						3 - servidor em processo de envio de resposta
+						4 - servidor acaboude enviar a resposta da requisicao
+						*/
+						
+							//alert(ajax.status);
+							//alert(ajax.statusText);
+							//alert(ajax.responseText);
+							//resp.innerHTML = ajax.responseText;
+							
+				
+				
+				////////////////////////////////////////////////////////////////////////////////
+				//indica aoajax quais os dados de endereco de afrquivoque ele acessará no servidor
+				//dois parametros obrigatorios - metodo(GET e POST sao os mais populares) e url(valor relativo ou absoluto - no mesmoservidor)
+				//tres parametros opcionais - assincronia(padrao true) - usuario e senha
+				
+				//ajax.send(nome=edu&idade=54)
+				//respostas
+				//status - numero - 200 se ok - 404 nao encontrada
+				//alert(ajax.status);
+				
+				//status em formato de texto
+				//alert(ajax.statusText);
+				
+				//responseText = para carregamento de conteudo texto
+				//alert(ajax.responseText);
+				
+				//responseXML= para carregamento de conteudo xml
+				//alert(ajax.responseXML);
+				
+
+</script>
+</head>
+
+<body>
+<div>
+  <input type="button" name="botao" id="botao" value="Button">
+</div>
+<div id="resposta"></div>
+</body>
+</html>

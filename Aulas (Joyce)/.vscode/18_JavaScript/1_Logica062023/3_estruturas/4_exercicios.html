@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //entrar com um numero e dizer se ele é par ou impar
+        //exercicio paginma 30 da apostila
+        var numero = parseInt(prompt("Digite um número:"));
+
+        if (numero % 2 === 0) {
+            document.write("O número é par.");
+        } else {
+            document.write("O número é ímpar.");
+        }
+        document.write('<hr>');
+        //entrar com 3 numeros e dizer qual é o maior
+        //em consideração que nao entrou com numero igual
+        let n1 = Number(prompt('entre com o primeiro valor'));
+        let n2 = Number(prompt('entre com o segundo  valor'));
+        let n3 = Number(prompt('entre com o terceiro valor'));
+
+        if(n1 == n2 || n1==n3 || n2==n3){
+            document.write(`Não é permitido numeros iguais`);
+        }else if(n1 > n2 && n1 > n3){
+            document.write(`n1 contem o maior numero: ${n1}`);
+        }else if(n2 > n3){
+            document.write(`n2 contem o maior numero: ${n2}`);
+        }else{
+            document.write(`n3 contem o maior numero: ${n3}`);
+        }
+
+        document.write("<hr>");
+
+    </script>
+</body>
+</html>

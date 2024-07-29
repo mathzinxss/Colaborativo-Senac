@@ -5,175 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+
+    </script>
 </head>
 
 <body>
     <script>
-        //Fazem uma função e RETORNAM um resultado
+        //fazem uma operação e retornam um resultado
 
-        //Operador de atribuição
-        //Atribui um valor à uma variavel
-        let num = 25;//Variavel num RECEBE o valor 25 OU valor 25 é ATRIBUIDO à uma variavel num
-        document.write(num + "<br>");//25
+        //operador de atribuição
+        // atribui um valor à uma variável
+        let num = 25;//variável `num` RECEBE o valor 25 ou valor 25 é ATRIBUIDO à variável num 
+        document.write(num + "<br>")    //25
 
-        //Acumulando
-        num = num + 15;//num = 25 + 15 // num = 40 
-        document.write(num + "<br>");//40
+        //acumulando
+        num += 15;
+        document.write(num + "<br>")    //40
 
-        //Forma reduzida de acumular valores na variavel
+        //forma reduzida de acumular valores na variável
         num += 20;//num = num + 20
-        document.write(num + "<br>");//60
+        document.write(num + "<br>")    //60
 
-        //Incremento - aumentar de 1 em 1
+        //incremento - aumentar de 1 em 1
         num++;//num = num + 1
-        document.write(num + "<br>");
+        document.write(num + "<br>")    //61
         num++;//num = num + 1
-        document.write(num + "<br>");
+        document.write(num + "<br>")      //62
 
         //decremento - diminuir de 1 em 1
         num--;//num = num - 1
-        document.write(num + "<br>");
+        document.write(num + "<br>")    //61
         num--;//num = num - 1
-        document.write(num + "<br>");
+        document.write(num + "<br>")    //60
 
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////operador de concatenação
-        //operador de strings
-        let nome = "Luis";
-        document.write(nome + "<br>")//Luis
-        nome = nome + " Roberto";
-        document.write(nome + "<br>")//Luis Roberto
-        nome += " Santos";//nome = nome + "Santos"
-        document.write(nome + "<br>")
+        /*=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=--=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+        //operadores de concatenação
+        //operador de string
 
-        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        let nome = "João";
+        document.write(nome + "<br>")//Luiz
+        nome += " Roberto"
+        document.write(nome + "<br>")//Luiz Roberto
+        nome += " Santos"
+        document.write(nome + "<br>")//Luiz Roberto Santos
+
+        /*=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=--=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
         //Conversão de tipos ou Type Casting
-        document.write(("5" + "3") + "<br>")
         document.write((5 + 3) + "<br>")
-        document.write(("5" + 3) + "<br>")//CONVERSÃO IMPLICITA DE NUMERO EM TEXTO
+        document.write((5 + "3") + "<br>")
+        document.write(("5" + "3") + "<br>") //Conversão implícita de número em texto
 
-        /* parceInt() parceFloat() Number() String() Boolean() */
+        // parseInt() parseFloat() Number() String() Boolean()
+        document.write(("5" + String(3)) + "<br>")//Conveção explícita de número em texto
+        document.write((Number("5") + 3) + "<br>") //Conversão explicita de texto em número
 
-        document.write(("5" + String(3)) + "<br>")//CONVERSÃO EXPLICITA DE NUMERO EM TEXTO
+        /*=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=--=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 
-        document.write((Number("5") + 3) + "<br>")//CONVERSÃO EXPLICITA DE TEXTO EM NUMERO
-        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        //operadores aritimeticos
-        document.write(("5" + 3) + "<br>")//Adição
-        document.write(("5" - 3) + "<br>")//Subtração
-        document.write(("5" * 3) + "<br>")//Multiplicação
-        document.write(("5" / 3) + "<br>")//Divisão
-        document.write(("5" % 3) + "<br>")//Porcentagem
-        document.write(("5" ** 3) + "<br>")//Potencia - 5*5*5
+        document.write((5+3) + "<br>")//Adição
+        document.write((5-3) + "<br>")//Subtração
+        document.write((5*3) + "<br>")//Multiplicação
+        document.write((5/3) + "<br>")//Divisão
+        document.write((5%3) + "<br>")//Resto da divisão
+        document.write((5**3) + "<br>")//Potência
 
-        document.write("<hr>")
-        document.write("Operadores de comparação <br>")
-        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        /*Operadores de comparação*/
-        //comparam 2 valores (conteúdo) e retornam TRUE ou FALSE
-        // == igualdade - se tem o mesmo valor - não leva em consideração o tipo de dado
-        // === idênticas - se tem o mesmo valor e o mesmo tipo
-        document.write((5 == 3) + "<br>")//false
-        document.write((5 == "5") + "<br>")//true
-        document.write((5 === "5") + "<br>")//false
-        document.write(("5" === "5") + "<br>")//true
-        document.write((5 === 5) + "<br>")//true
-        //operador de negação - !
-        document.write((true) + "<br>")//true
-        document.write((false) + "<br>")//false
-
-        document.write((!true) + "<br>")//false
-        document.write((!false) + "<br>")//true
-
-        //simbolo para diferente SERIA <> - em JavaScript não existe
-        // != significa diferente - somente verifica o valor - não verifica tipo
-        // !== significa não idêntico - verifica vaor e tipo
-        document.write((5 != 3) + "<br>")//true
-        document.write(("5" != 5) + "<br>")//false
-        document.write(("5" !== 5) + "<br>")//true
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        document.write("<hr>")
-        document.write("Operadores de maior e menor <br>")
-        //Valores maiores e menores
-        document.write((5 > 3) + "<br>")//true
-        document.write(("5" > 3) + "<br>")//true
-        document.write((5 < 3) + "<br>")//false
-
-        //Valores maiores ou igual e menores ou igual
-        document.write((5 >= 3) + "<br>")//true
-        document.write(("5" >= 3) + "<br>")//true
-        document.write((5 <= 3) + "<br>")//false
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        document.write("<hr>")
-        document.write("Operadores lógicos <br>")
-        //vão unir mais de uma coparação, porém trarão somente um resultado: true ou false
-
-        //AND => && -
-        //para retornar VERDADEIRO todas as comparações devem ser verdadeiras 
-        document.write(5 > 3 && 5 != 8) //(true && true) => (true)
-        document.write("<br>")//
-        document.write(5 > 30 && 5 != 8) //(false && true) => (false)
-        document.write("<br>")//
-        document.write(5 > 30 && 5 != 5) //(true && false) => (false)
-        document.write("<br>")// 
-
-        //OR => ||
-        //para retornar verdaeiro basta que um seja verdadeiro 
-        document.write(5 > 3 || 5 != 8) //(true || true) => (true)
-        document.write("<br>")//
-        document.write(5 < 3 || 5 != 8) //(false || false) => (true)
-        document.write("<br>")//
-        document.write(5 < 3 || 5 == 8) //(false || false) => (false)
-        document.write("<br>")//
-
-        //XOR - ^
-        // ou ÚNICO ou EXCLUSIVO
-        document.write("XOR <br>")//
-        document.write(5 > 3 ^ 5 != 8) //(true ^ true) => (false)
-        document.write("<br>")//
-        document.write(5 > 3 ^ 5 == 8) //(true ^ false) => (true)
-        document.write("<br>")//
-
-        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        document.write("<hr>")
-        document.write("Tabela verdade <br>")
-        
-        /*
-        1aP     2aP     &&     ||     XOR
-        V       V       V      V      F
-        V       F       F      V      V
-        F       V       F      V      V
-        F       F       F      F      F
-        */
-       /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-       document.write("<hr>")
-       document.write("Operador ternário <br>")
-       let abc = (5 !== 5)?("Firmeza"):("Mané")
-       document.write(abc + "<br>");     
-
-       /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-       document.write("<hr>")
-       document.write("Objeto math <br>")
-       document.write( Math.round (25.6) + "<br>");//ARREDONDA PARA O MAIS PRÓXIMO//26
-       document.write( Math.round (25.2) + "<br>");//ARREDONDA PARA O MAIS PRÓXIMO//25
-       document.write( Math.ceil (25.2) + "<br>");//ARREDONDA PARA CIMA//26
-       document.write( Math.floor (25.9) + "<br>");//ARREDONDA PARA BAIXO//25
-
-       document.write( Math.PI + "<br>");
-       document.write( Math.pow (5,3) + "<br>");//potencia
-
-       //raiz quadrada
-       document.write( Math.sqrt(25) + "<br>");//raiz quadrada
-
-       //outras raizes
-      //quadrada
-      document.write( Math.pow(25, 1/2) + "<br>");//raiz quadrada
-      document.write( Math.pow(125,1/3) + "<br>");//raiz quadrada
-
-      document.write( (125 ** (1/3)) + "<br>");//raiz quadrada
     </script>
-
 </body>
 
 </html>

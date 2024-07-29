@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scripts/scripts.js"></script>
+    <script>
+        // Cannot set properties of null (setting 'value')
+        // window.document.getElementById('um').value="Conteudo dinâmico"
+    </script>
+</head>
+
+<body>
+
+    <button id="um" type="button">Evento clique</button>
+
+    <button id="dois" type="button">Evento Duplo Clique</button>
+
+    <button id="tres" type="button">Evento Mouse em cima</button>
+
+    <button id="quatro" type="button">Evento Mouse Fora</button>
+    <script>
+        window.document.getElementById('um').innerHTML = "Conteudo dinâmico"
+
+
+        document.getElementById('um').addEventListener('click', calculaIdade);
+
+        document.getElementById('dois').addEventListener('click', function () {
+            calculaIdade();
+        })
+
+        document.getElementById('tres').addEventListener('click', function () {
+            calculaIdade();
+        })
+
+        document.getElementById('quatro').addEventListener('click', ()=>{
+            calculaIdade();
+        })
+        //arrow function - função seta
+
+    </script>
+
+</body>
+
+</html>

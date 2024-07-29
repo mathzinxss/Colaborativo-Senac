@@ -1,0 +1,11 @@
+p{
+    font-family: fantasy;
+    font-size: 125px;
+    color:pink;
+    text-decoration: underline;
+}
+h3{
+    text-decoration: double;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

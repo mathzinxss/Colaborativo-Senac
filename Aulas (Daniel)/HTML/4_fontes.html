@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+	/*
+		em é definida como o font-size atual.
+		
+		rem (o “r” significa “root”: “root em”)font-size atual da raiz da pagina.
+		
+		rem não é útil apenas para dimensionamento de fontes. Por exemplo, é possível basear um sistema de grids inteiro ou uma biblioteca de estilos tomando por base o tamanho de fonte do elemento raiz <html> usando em, utilizando em para escalar em locais específicos.
+		
+		vw - O tamanho do texto pode ser definido com uma vw - view window - unidade, o que significa "largura da janela de visualização".
+		A janela de visualização é o tamanho da janela do navegador. 1vw = 1% da largura da janela de visualização. Se a janela de visualização tiver 50 cm de largura, 1vw é 0,5 cm.
+		*/
+
+    </style>
+</head>
+<body>
+    <div><!-- 16px * 1.2 = 19.2-->
+        Div Teste 1 
+        <div><!-- 19.2px * 1.2 = 23.04-->
+            Div Teste 2 
+            <div><!-- 23.04px * 1.2 = 27,64-->
+                Div Teste 3 
+            </div>
+        </div>
+    </div>
+<hr>
+    <article><!--  16 * 0.8-->
+        Article Teste 1
+        <article >
+            Article Teste 2 
+            <article>
+                Article Teste 3 
+            </article>
+        </article>
+    </article>
+
+<hr>
+<h1>Eu sou o titulo</h1>    
+</body>
+</html>

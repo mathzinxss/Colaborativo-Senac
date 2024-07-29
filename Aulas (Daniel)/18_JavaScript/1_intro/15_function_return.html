@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function somaNumeros(num1, num2) {
+            let resp = Number(num1) + parseFloat(num2);
+            return resp;
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        //let z = somaNumeros(69, 81)
+        //alert(z)
+    </script>
+
+
+    <hr>
+
+
+    <script>
+        //let x = prompt('Digite o primeiro numero')
+        //let y = prompt('Digite o segundo numero')
+        //let i = somaNumeros(x, y)
+        //document.write(i)
+    </script>
+
+
+    <hr>
+
+
+    <script>
+
+        //let dados = somaNumeros(741, 9)
+        //console.log(dados)
+    </script>
+
+
+    <hr>
+
+
+    <script>
+
+        //somaNumeros(8523, 17)
+    </script>
+
+    <hr>
+    <script>
+        document.write("Agora o bixo vai pegar!!!!!!!!<hr>")
+
+        /*
+        let abc = prompt("Digite primeiro numero"); //10
+        let def = prompt("Digite segundo numero"); //20
+        let ghi = prompt("Digite terceiro numero"); //30
+        let jkl = prompt("Digite quarto numero"); //40
+        
+        let soma1 = somaNumeros(abc,def)
+        let soma2 = somaNumeros(ghi,jkl)
+        
+        let somaTudo = somaNumeros(soma1,soma2)
+        
+        document.write(somaTudo)
+        */
+
+        //let abc = prompt("Digite o primeiro numero"); 10
+        //let def = prompt("Digite o segundo numero");  20
+        //let ghi = prompt("Digite o terceiro numero"); 30
+        //let jkl = prompt("Digite o quarto numero");   40
+
+        //let soma1 = somaNumeros(abc, def)
+        //let soma2 = somaNumeros(ghi, jkl)
+
+        //let somaTudo = somaNumeros(somaNumeros(abc,def), somaNumeros(ghi, jkl))
+
+        document.write(
+            somaNumeros(
+                somaNumeros(
+                    prompt("Digite o primeiro numero"), 
+                    prompt("Digite o segundo numero")
+                ), 
+                somaNumeros(
+                    prompt("Digite o terceiro numero"), 
+                    prompt("Digite o quarto numero")
+                )
+            )
+        );
+    </script>
+</body>
+
+</html>

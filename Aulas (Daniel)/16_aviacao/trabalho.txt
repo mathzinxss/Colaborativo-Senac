@@ -1,49 +1,49 @@
-http://www.edupretel.com.br/html5_impacta/aviacao/
+Ôªøhttp://www.edupretel.com.br/html5/aviacao/
 
-Transito AÈreo
-Se no tr‚nsito da cidade j· È preciso o m·ximo de atenÁ„o para evitar acidentes, em aeroportos movimentados È preciso uma mobilizaÁ„o operacional ainda maior para garantir que uma aeronave n„o colida com outras.
+Transito A√©reo
+Se no tr√¢nsito da cidade j√° √© preciso o m√°ximo de aten√ß√£o para evitar acidentes, em aeroportos movimentados √© preciso uma mobiliza√ß√£o operacional ainda maior para garantir que uma aeronave n√£o colida com outras.
 
-No ˙ltimo fim de semana, por muito pouco, um completo desastre foi evitado no Aeroporto Barcelona. Um Boeing 767 vindo de Moscou foi obrigado a abortar o pouso (ìarremeterî) em uma manobra arriscada porque um avi„o da Argentinas Airbus estava atravessando a pista no mesmo momento. Felizmente, n„o houve feridos.
+No √∫ltimo fim de semana, por muito pouco, um completo desastre foi evitado no Aeroporto Barcelona. Um Boeing 767 vindo de Moscou foi obrigado a abortar o pouso (‚Äúarremeter‚Äù) em uma manobra arriscada porque um avi√£o da Argentinas Airbus estava atravessando a pista no mesmo momento. Felizmente, n√£o houve feridos.
 
-Dentre os v·rios recursos de monitoramento do tr·fego aÈreo, um deles È inclusive acessÌvel a toda populaÁ„o. Assim como atualmente È possÌvel a qualquer cidad„o comum vigiar o desmatamento das florestas, outra aplicaÁ„o utilizando os mapas do Google foi criada para fornecer informaÁıes de v·rios dos aviıes em tr‚nsito no planeta em ìtempo (quase) realî.
+Dentre os v√°rios recursos de monitoramento do tr√°fego a√©reo, um deles √© inclusive acess√≠vel a toda popula√ß√£o. Assim como atualmente √© poss√≠vel a qualquer cidad√£o comum vigiar o desmatamento das florestas, outra aplica√ß√£o utilizando os mapas do Google foi criada para fornecer informa√ß√µes de v√°rios dos avi√µes em tr√¢nsito no planeta em ‚Äútempo (quase) real‚Äù.
 
 
 
 
 Monitoramento
 
-O FlightRadar24 È um site sueco que mostra dados de cerca de 6 mil aeronaves do mundo inteiro, como local de decolagem e destino, altura e velocidade dos aviıes, direto em seu navegador ñ ou tablets e smartphones com iOS ou Android.
+O FlightRadar24 √© um site sueco que mostra dados de cerca de 6 mil aeronaves do mundo inteiro, como local de decolagem e destino, altura e velocidade dos avi√µes, direto em seu navegador ‚Äì ou tablets e smartphones com iOS ou Android.
 
 
-O monitoramento È realizado graÁas a uma tecnologia chamada ADS-B, que equipa 60% dos aviıes em operaÁ„o no mundo. As informaÁıes s„o transmitidas simultaneamente para cerca de 500 receptores espalhados pelo mundo e transferidas para o site na forma de aviıezinhos amarelos. AlÈm disso, o Ûrg„o norte-americano de controle de tr·fego aÈreo, FAA, fornece informaÁıes de outra parcela de voos, que s„o exibidas como aviıezinhos alaranjados no mapa ñ por questıes de seguranÁa, com um atraso de 5 minutos.
+O monitoramento √© realizado gra√ßas a uma tecnologia chamada ADS-B, que equipa 60% dos avi√µes em opera√ß√£o no mundo. As informa√ß√µes s√£o transmitidas simultaneamente para cerca de 500 receptores espalhados pelo mundo e transferidas para o site na forma de avi√µezinhos amarelos. Al√©m disso, o √≥rg√£o norte-americano de controle de tr√°fego a√©reo, FAA, fornece informa√ß√µes de outra parcela de voos, que s√£o exibidas como avi√µezinhos alaranjados no mapa ‚Äì por quest√µes de seguran√ßa, com um atraso de 5 minutos.
 
-Esse sistema garante que todos os voos dos EUA e Canad·, alÈm de 95% dos voos europeus, e ainda uma parte do tr·fego aÈreo de outros locais sejam rastreados.
+Esse sistema garante que todos os voos dos EUA e Canad√°, al√©m de 95% dos voos europeus, e ainda uma parte do tr√°fego a√©reo de outros locais sejam rastreados.
 
 
 Aeroporots Centrais
 
-Os aeroportos inseridos em zonas urbanas densamente povoadas s„o conseq¸Íncia da ocupaÁ„o desordenada do solo. V·rias cidades no mundo passam por esse tipo de situaÁ„o. Infelizmente, a desativaÁ„o total desses serviÁos muitas vezes È invi·vel, ainda mais em nosso paÌs, cujos recursos financeiros s„o escassos. 
+Os aeroportos inseridos em zonas urbanas densamente povoadas s√£o conseq√º√™ncia da ocupa√ß√£o desordenada do solo. V√°rias cidades no mundo passam por esse tipo de situa√ß√£o. Infelizmente, a desativa√ß√£o total desses servi√ßos muitas vezes √© invi√°vel, ainda mais em nosso pa√≠s, cujos recursos financeiros s√£o escassos. 
 
-No entanto, em casos extremos como o do Aeroporto de Congonhas, devem ser tomadas medidas dr·sticas na operaÁ„o aeroportu·ria a fim de minimizar esse impacto negativo. Um controle rigoroso do tipo e do peso das aeronaves que operam no local e das dist‚ncias percorridas, a limitaÁ„o nos hor·rios da operaÁ„o aeroportu·ria e, acima de tudo, controlar a demanda e manter uma infra-estrutura de pistas e p·tios executados com todo o rigor tÈcnico, atendendo ‡s normas internacionais, s„o fatores fundamentais a serem considerados no planejamento aeroportu·rio.
+No entanto, em casos extremos como o do Aeroporto de Congonhas, devem ser tomadas medidas dr√°sticas na opera√ß√£o aeroportu√°ria a fim de minimizar esse impacto negativo. Um controle rigoroso do tipo e do peso das aeronaves que operam no local e das dist√¢ncias percorridas, a limita√ß√£o nos hor√°rios da opera√ß√£o aeroportu√°ria e, acima de tudo, controlar a demanda e manter uma infra-estrutura de pistas e p√°tios executados com todo o rigor t√©cnico, atendendo √†s normas internacionais, s√£o fatores fundamentais a serem considerados no planejamento aeroportu√°rio.
 
-Se nÛs entendermos o tr·fego aÈreo como priorit·rio no atendimento ao maior n˙mero possÌvel de pessoas, n„o podemos imaginar aeroportos distantes dos centros urbanos. E mesmo os que j· existem, ou est„o em projeto fora das grandes cidades, ser„o inevitavelmente engolidos por elas com o tempo. Portanto, n„o se trata de implantarmos terminais cada vez mais afastados, de vinte em vinte anos. Temos, sim, de resolver esse problema restringindo o uso residencial e comercial nas ·reas de aproximaÁ„o das aeronaves, para garantir as chamadas ·reas de escape das pistas, respaldando-se numa polÌtica rigorosa de uso do solo e na continuidade administrativa de seus gestores.
+Se n√≥s entendermos o tr√°fego a√©reo como priorit√°rio no atendimento ao maior n√∫mero poss√≠vel de pessoas, n√£o podemos imaginar aeroportos distantes dos centros urbanos. E mesmo os que j√° existem, ou est√£o em projeto fora das grandes cidades, ser√£o inevitavelmente engolidos por elas com o tempo. Portanto, n√£o se trata de implantarmos terminais cada vez mais afastados, de vinte em vinte anos. Temos, sim, de resolver esse problema restringindo o uso residencial e comercial nas √°reas de aproxima√ß√£o das aeronaves, para garantir as chamadas √°reas de escape das pistas, respaldando-se numa pol√≠tica rigorosa de uso do solo e na continuidade administrativa de seus gestores.
 
 
 decolagem e pouso
 
-A maior parte dos acidentes em aeron·utica ocorrem durante a decolagem e a aterrissagem, que s„o justamente as partes mais crÌticas do vÙo. Isso È facilmente compreensÌvel tendo em vista que nessas situaÁıes, em caso de uma falha, o piloto ter· muito menos tempo disponÌvel para reagir. A seguir s„o apresentadas algumas consideraÁıes no que se refer a pouso e decolagem: Respeito aos procedimentos 
+A maior parte dos acidentes em aeron√°utica ocorrem durante a decolagem e a aterrissagem, que s√£o justamente as partes mais cr√≠ticas do v√¥o. Isso √© facilmente compreens√≠vel tendo em vista que nessas situa√ß√µes, em caso de uma falha, o piloto ter√° muito menos tempo dispon√≠vel para reagir. A seguir s√£o apresentadas algumas considera√ß√µes no que se refer a pouso e decolagem: Respeito aos procedimentos 
 
-A primeira consideraÁ„o a ser seguida para uma decolagem segura È sempre respeitar as normas de decolagem e aterrissagem. Durante a decolagem existe uma velocidade, chamada velocidade de decis„o, antes da qual caso uma falha ocorra na aeronave È obrigatÛria a abortagem da decolagem. Caso a falha ocorra depois da velocidade de decis„o, a decolagem È ent„o obrigatÛria. Tal velocidade È determinada levando-se em consideraÁ„o as caracterÌsticas da aeronave e a pista em que ela est· decolando. 
+A primeira considera√ß√£o a ser seguida para uma decolagem segura √© sempre respeitar as normas de decolagem e aterrissagem. Durante a decolagem existe uma velocidade, chamada velocidade de decis√£o, antes da qual caso uma falha ocorra na aeronave √© obrigat√≥ria a abortagem da decolagem. Caso a falha ocorra depois da velocidade de decis√£o, a decolagem √© ent√£o obrigat√≥ria. Tal velocidade √© determinada levando-se em considera√ß√£o as caracter√≠sticas da aeronave e a pista em que ela est√° decolando. 
 
-Considerando vÙos comerciais, sempre s„o obrigatÛrios antes da decolagem uma sÈrie de instruÁıes aos passageiros. S„o obrigatÛrios instruÁıes sobre onde e quando se pode fumar (durante a decolagem e aterrissagem o fumo È proibido), e sobre a obrigatoriedade do uso do cinto de seguranÁa durante decolagens e aterrissagens, assim como a de se colocar os assentos na aposiÁ„o vertical. TambÈm devem ser fornecidas informaÁıes sobre a localizaÁ„o das saÌdas de emergÍncia e, em casos de vÙos a grandes altitudes, do uso de m·scaras de oxigÍnio suplementar em emergÍncias. 
+Considerando v√¥os comerciais, sempre s√£o obrigat√≥rios antes da decolagem uma s√©rie de instru√ß√µes aos passageiros. S√£o obrigat√≥rios instru√ß√µes sobre onde e quando se pode fumar (durante a decolagem e aterrissagem o fumo √© proibido), e sobre a obrigatoriedade do uso do cinto de seguran√ßa durante decolagens e aterrissagens, assim como a de se colocar os assentos na aposi√ß√£o vertical. Tamb√©m devem ser fornecidas informa√ß√µes sobre a localiza√ß√£o das sa√≠das de emerg√™ncia e, em casos de v√¥os a grandes altitudes, do uso de m√°scaras de oxig√™nio suplementar em emerg√™ncias. 
 
 
-IntegraÁ„o com a Natureza
+Integra√ß√£o com a Natureza
 
-Trovoadas violentas podem acarretar precipitaÁıes de atÈ 50 gramas de ·gua por metro c˙bico, o que em teoria pode vir a apagar as turbinas de um avi„o. 
+Trovoadas violentas podem acarretar precipita√ß√µes de at√© 50 gramas de √°gua por metro c√∫bico, o que em teoria pode vir a apagar as turbinas de um avi√£o. 
 
-Rel‚mpagos podem ocorrer dentro de uma nuvem, entre duas nuvens ou entre uma nuvem e o solo.
+Rel√¢mpagos podem ocorrer dentro de uma nuvem, entre duas nuvens ou entre uma nuvem e o solo.
 		
-Aquaplanagem È causada por uma camada de ·gua que se interpıe entre a pista e os pneus da aeronave, formando uma barreira que reduz drasticamente o atrito dos pneus com o solo, colocando assim em risco a aterrissagem.
+Aquaplanagem √© causada por uma camada de √°gua que se interp√µe entre a pista e os pneus da aeronave, formando uma barreira que reduz drasticamente o atrito dos pneus com o solo, colocando assim em risco a aterrissagem.
  		
-Pedras de gelo de atÈ 5 polegadas s„o encontradas em alturas de 10000 pÈs. Considerando que pedras de apenas 2 polegadas j· podem causas danos diversos em aeronaves.
+Pedras de gelo de at√© 5 polegadas s√£o encontradas em alturas de 10000 p√©s. Considerando que pedras de apenas 2 polegadas j√° podem causas danos diversos em aeronaves.

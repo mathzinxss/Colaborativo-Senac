@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scripts/script.js"></script>
+    <script>
+        window.onload = function () { //para carregar funções que não foram carregadas ainda (geralmente são carregadas no body).
+
+            window.document.getElementById('um').innerHTML = "Conteúdo dinâmico"
+
+            document.getElementById('um').onclick = calculaIdade;
+
+            document.getElementById('dois').ondblclick = function () {
+                calculaIdade();
+            }
+
+            document.getElementById('tres').onmouseover = function () {
+                let nasc = 0
+                let ano = 2024
+
+                nasc = prompt("Digite o ano de nascimento:");
+
+                resp = 2024 - Number(nasc);
+
+                alert(`No final do ano de ${ano} esta pessoa terá ${resp} anos!!!`);
+            }
+            // arrow function - função seta
+            document.getElementById('quatro').onmouseout = () => {
+                let nasc = 0
+                let ano = 2024
+
+                nasc = prompt("Digite o ano de nascimento:");
+
+                resp = 2024 - Number(nasc);
+
+                alert(`No final do ano de ${ano} esta pessoa terá ${resp} anos!!!`);
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <button id="um" type="button" onclick="javascript:calculaIdade()">Evento Clique</button>
+    <button id="dois" type="button" ondblclick="calculaIdade()">Evento Duplo Clique</button>
+    <button id="tres" type="button" onmouseover="calculaIdade()">Evento Mouse em Cima</button>
+    <button id="quatro" type="button" onmouseout="calculaIdade()">Evento Mouse Fora</button>
+</body>
+
+</html>

@@ -4,13 +4,7 @@
 <meta charset="utf-8">
 <title>HTML 5 – A Nova Onda</title>
 <style type="text/css">
-	/*
-Quando os elementos são posicionados, eles podem se sobrepor a outros elementos.
 
-A z-indexpropriedade especifica a ordem da pilha de um elemento (qual elemento deve ser colocado na frente ou atrás dos outros).
-
-Um elemento pode ter uma ordem de empilhamento positiva ou negativa:
-	*/	
 div{
 	border: 1px solid black;
 	width:300px;
@@ -19,22 +13,27 @@ div{
 #um{
 	background-color: red;
 	position:static;
+	float: right;
 }
 #dois{
 	background-color: green;
 	position:static;
+	float: right;
 }
 #tres{
 	background-color: aqua;
-	
+	float: right;
 }
 #quatro{
 	background-color: grey;
 	position:static;
+	clear:both;
+	float:right;
 }
 #cinco{
 	background-color: yellow;
 	position:static;
+	float:right;
 }
 #seis{
 	background-color: brown;

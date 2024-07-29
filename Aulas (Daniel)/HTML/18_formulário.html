@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <meta author="Mathias Fernando">
+    <link rel="stylesheet" href="estilos/18_style.css">
+</head>
+
+<body>
+    <!-- 
+            Modo padrão é o GET e não precisa ser declarado.
+            Metodo padrão do browser/Navegador
+            Mostrará todas as informações na URL
+
+            Metodo POST => Precisa ser declarado
+            Só pode ser declarado na tag form
+            Não mostrará as informações na URL 
+            As informações serão enviadas fechadas no corpo da requisição
+        -->
+    <figure>
+        <img src="../catalogos/bueiros/b003.jpg" alt="bueiros">
+    </figure>
+    <form action="https://www.edupretel.com.br/html5/mensagem.php" method="post">
+
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <p>
+                <label for="nome" tabindex="1" autofocus>Nome:</label>
+                <!--
+                    <input id="nome" name="nomeUsuario" type="text" required=requerido-obrigatório>    
+                    -->
+                <input id="nome" name="nomeUsuario" type="text" maxlength="50" placeholder="Digite seu nome..."
+                    tabindex="2" required>
+                <!--estilo html: required-->
+            </p>
+            <p>
+                <label for="senha" tabindex="3">Senha</label>
+                <input type="password" id="senha" name="senha" tabindex="4" placeholder="Digite sua senha..." required>
+            </p>
+            <p>
+                <label for="email" tabindex="5">E-mail</label>
+                <input type="email" name="email" id="email" tabindex="6">
+            </p>
+            <p>
+                <label for="dataNasc" tabindex="7">Data de Nascimento</label>
+                <input type="date" name="dataNasc" id="dataNasc" tabindex="8">
+            </p>
+        </fieldset>
+
+
+
+        <fieldset>
+            <legend>Listas</legend>
+            <p>
+                <label for="ufNasc"> UF Nascimento</label>
+                <select name="ufNasc" id="ufNasc">
+                    <option value="sp">São Paulo</option>
+                    <option value="ba">Bahia</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="se">Sergipe</option>
+                    <option value="ac">Acre</option>
+                    <option value="ce">Ceará</option>
+                    <option value="pe">Pernambuco</option>
+                    <option value="pa" selected>Pará</option>
+                    <option value="pr">Paraná</option>
+                </select>
+            </p>
+            <p>
+                <label for="ufMora">UF Moradia</label>
+                <select name="ufMora[]" id="ufMora" multiple>
+                    <option value="sp">São Paulo</option>
+                    <option value="ba">Bahia</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="se">Sergipe</option>
+                    <option value="ac">Acre</option>
+                    <option value="ce">Ceará</option>
+                    <option value="pe">Pernambuco</option>
+                    <option value="pa">Pará</option>
+                    <option value="pr">Paraná</option>
+                </select>
+            </p>
+            <p>
+                Sexo<br>
+                <input type="radio" id="sexo_m" name="sexo" value="M">
+                <label class="formata" for="sexo_m">Masculino</label>
+                <br>
+                <input type="radio" id="sexo_f" name="sexo" value="F" checked>
+                <label class="formata" for="sexo_f">Feminino</label>
+            </p>
+            <p>
+                Idiomas:<br>
+                <input type="checkbox" name="idiomas[]" id="ingles" value="ing">
+                <label class="formata" for="Ingles">Ingles</label>
+                <br>
+
+                <input type="checkbox" name="idiomas[]" id="frances" value="fra">
+                <label class="formata" for="frances">Frances</label>
+                <br>
+
+                <input type="checkbox" name="idiomas[]" id="espanhol" value="esp">
+                <label class="formata" for="espanhol">Espanhol</label>
+                <br>
+
+                <input type="checkbox" name="idiomas[]" id="italiano" value="ita">
+                <label class="formata" for="italiano">Italiano</label>
+                <br>
+            </p>
+
+            <fieldset>
+                <legend>Expressões Regulares</legend>
+                <p>
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" id="cpf" maxlength="14" minlength="14" required
+                        pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite o CPF no formato nnn.nnn.nnn-nn"
+                        oninvalid="alert('CPF invalido!!!!!')">
+                </p>
+                <p>
+                    <label for="cnpj">CNPJ</label>
+                    <input type="text" name="cnpj" maxlength="18" minlength="18" required
+                        pattern="\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}" title="Digite o CNPJ no formato nn.nnn.nnn./0000-0"
+                        oninvalid="alert('CNPJ invalido')">
+
+                </p>
+            </fieldset>
+
+        </fieldset>
+        <input type="hidden" name="recipient" value="danieldovalegodoi@gmail.com">
+        <input type="hidden" name="subject" value="Nike faliu">
+        <input type="hidden" name="redirect" value="obrigado.html">
+
+        <p id="botoes">
+            <input type="submit" value="Enviar Formulário">
+            <input type="reset" value="Redefinir o formulario">
+            <input type="button" value="Dar um aviso" onclick="javascript:alert('Vai ter ferias em Julho!!!')">
+            <input type="button" value="Dar um aviso 2" onclick="alert('Vai ter ferias em Julho!!!')">
+            <input type="button" value="imprimir formulario" onclick="window.print()">
+        </p>
+
+    </form>
+</body>
+
+</html>

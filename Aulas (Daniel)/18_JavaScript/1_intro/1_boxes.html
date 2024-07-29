@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+        <script type="text/javascript" language="javascript">
+    -->
+    <script>
+        /*
+        window.alert('Eu sou um alert');
+        window.prompt('Digite seu nome:');
+        window.confirm('Você almocou?');
+        */
+        //declaração de variaveis
+        //qual é o tamanho e qual é o tipo de dados que poderá ser guardado nela
+        //em JavaScript não se declara variavel, se inicia variável
+        //portanto, não fica restrito
+
+        //linguagens compiladas -> precisam ser instaladas e entramos no programa através de um arquivo executável(xxx.exe). Não podem ser lidos por seres humanos, somente pelas máquinas. Excel, Word, Chrome, OperaGx
+        //programando em linguagem lidas por humanos e depois compiladas. Serão interpretadas por um interpretador externo que normalmente são chamados de motores. Portanto, podem ser lidas por seres humanos.
+        //O navegador possui o interpretador/motor do JavaScript, HTML e CSS
+        //Não é necessário declarar variáveis
+        //E o tipo não é da variável, mas sim do dado
+
+        //iniciando variáveis
+        let num1, num2, resp;
+        
+       num1 = window.prompt('Entre com o primeiro número!!!');
+       num2 = prompt('Entre com o segundo número');
+
+       //processamento de dados
+       resp = Number(num1) * Number(num2);
+
+       //saída de dados
+       //alert('A multiplicação dos números é: resp');
+       //alert("A multiplicação dos números é: " + resp);
+       //alert('A multiplicação dos números é: ' + resp);
+
+       //interpretação de variável
+       //reconhecer a variável dentro de uma STRING (coleção de caracteres - TEXTO)
+       //o Delimitador de texto não serão as aspas
+       //o delimitador será o acentro grave - crase
+       //a variavel deve ser precedida pelo caracter $ e deverá estar entre chaves ${resp}
+       alert(`A multiplicação dos números é: ${resp}`)
+
+        window.console.log("A multiplicação do número 1: " + num1+ "pelo número 2: "+num2+ "é: " +resp)
+        console.log(`A multiplicação do número 1: ${num1} pelo número 2: ${num2} é: ${resp}`);
+
+        window.document.write(`<h1 style="color:red">A multiplicação do numero 1 : ${num1} pelo numero 2 : ${num2} é: ${resp} </h1>`);
+        document.write(`<h1 style="color:blue">A multiplicação do numero 1 : ${num1} pelo numero 2 : ${num2} é: ${resp}</h1>`);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

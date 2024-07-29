@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <script>
+        //entrada de dados
+        //entrada com o ano de nascimento
+        let nasc = prompt("Digite o ano de nascimento:")
+        let ano = prompt("O ano que você deseja calcular sua idade")
+
+        //processamento de dados
+        //calcular quantos anos o usuário terá no final de 2024
+        resp = Number(ano) - Number(nasc)
+        
+        //saída no documento com a frase
+        //"No final do ano de 2024, esta pessoa terá {anos}!!!"        
+        document.write(`<h1 style="color:blue">No final do ano de ${ano} esta pessoa terá ${resp} anos!!!</h1>`)
+        document.write('<br>')
+        document.write('<h1 style="color:red">No final do ano de '+ano+' esta pessoa terá '+resp+' anos!!!</h1>')
+
+    </script>
+</body>
+</html>

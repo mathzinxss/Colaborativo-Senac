@@ -1,31 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script>
-      
+        window.onload = function () {
+            document.getElementById('incrementa').addEventListener('click', function () {
+                var num = document.getElementById('final').value;
+                var num2 = parseInt(num) + 1;
+                document.getElementById('final').value = num2;
+            });
+            document.getElementById('decrementa').addEventListener('click', function () {
+                var num = document.getElementById('final').value;
+                var num2 = parseInt(num) - 1;
+                document.getElementById('final').value = num2;
+            });
+
+            document.getElementById('soma').addEventListener('click', function () {
+                let calc1 = document.getElementById('num1').value;
+                let calc2 = document.getElementById('num2').value;
+                let calc = parentInt(num1) + parseInt(num2);
+                document.getElementById('resultado').value = calc;  
+
+
+            });
+        }
     </script>
 </head>
-<body>
-<input type="text" id="resultado" value="0">
-<br>
-<input type="button" id="incrementa" value="++"> 
-<input type="button" id="decrementa" value="--">   
-<hr>
 
-Num 1: <input type="text" id="num1">
-<br>
-Num 2: <input type="text" id="num2">
-<br>
-<input type="button" id="soma" value="+"> 
-<input type="button" id="subtrai" value="-">
-<input type="button" id="multiplica" value="*"> 
-<input type="button" id="divide" value="/">
-<p>O Resultado é:</p>
+<body>
+    <input type="text" id="final" value="0" readonly>
+    <br>
+    <input type="button" id="incrementa" value="++">
+    <input type="button" id="decrementa" value="--">
+    <hr>
+
+    Num 1: <input type="text" id="num1">
+    <br>
+    Num 2: <input type="text" id="num2">
+    <br>
+    <input type="button" id="soma" value="+">
+    <input type="button" id="subtrai" value="-">
+    <input type="button" id="multiplica" value="*">
+    <input type="button" id="divide" value="/">
+    <p id="valorFinal">O Resultado é:</p>
 
 
 </body>
+
 </html>

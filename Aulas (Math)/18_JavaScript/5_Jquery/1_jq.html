@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="jquery-3.1.1.min.js"></script>
 </head>
+
 <body>
     <!-- ol>li*4-->
-    <ol>
+    <ol id="carros">
         <li>Porsche</li>
         <li>Lamborghini</li>
         <li>Ferrari</li>
@@ -25,8 +28,28 @@
         // $('#veja') - Seletor Jquery
         // $('li').click(()=>{}) - Ação que deverá ser executada
 
+        $('li').click(function () {
+            //let info =$(this).text()
+            //alert(info)
+
+            alert($(this).text())
+        })
+
+        $('#carros').on('click', 'li', function(){
+            alert($(this).text())
+        })
+
+        $('#aperte').click(function () {
+            let entrada = $('#entrada').val()
+            $('#entrada').val('').focus()
+
+            $('<li>').text(entrada).css({'color':'red', 'font-family':'arial', 'background-color':'yellow', "border":"1px solid black", "display":"block"})
+                .appendTo('#carros')
+                .list;
+        })
 
     </script>
 
 </body>
+
 </html>

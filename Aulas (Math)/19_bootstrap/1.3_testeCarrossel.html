@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        div#demo{
+            border:10px solid black;
+        }
+        .carousel-inner img{
+          
+            height:  100%;
+        }
+         .carousel-item {
+            height: 100vh;
+        }
+        
+       /* .carousel-control-prev, .carousel-control-next {
+            width: 5%;
+        } */
+    </style>
+  
+</head>
+
+<body>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+            <li data-target="#demo" data-slide-to="4"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="dicionario/f_001.jpg" alt="Los Angeles">
+            </div>
+            <div class="carousel-item">
+                <img src="dicionario/f_002.jpg" alt="Chicago">
+            </div>
+            <div class="carousel-item">
+                <img src="dicionario/f_003.jpg" alt="New York">
+            </div>
+            <div class="carousel-item">
+                <img src="dicionario/f_004.jpg" alt="Chicago">
+            </div>
+            <div class="carousel-item">
+                <img src="dicionario/f_005.jpg" alt="New York">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <div>
+        
+    </div>
+    <script>
+        window.onload=function(){
+        let largura = document.getElementsByTagName('img')[0].width;
+        console.log(largura)
+        alert(largura)
+        document.getElementById('demo').style.width=largura;
+    }
+    </script>
+</body>
+
+</html>

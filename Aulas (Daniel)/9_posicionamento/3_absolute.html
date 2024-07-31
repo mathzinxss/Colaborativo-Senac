@@ -7,25 +7,16 @@
 /*
 	position:absolute  precisa ser declarado
 	Propriedades CSS top, bottom left right TEM EFEITO 
-    e são contadas a partir da origem do parent (pai dele), desde que o pai seja NÃO STATIC (RELATIVE, ABSOLUTE, FIXED, sticky) ou da pagina
+    e são contadas a partir da origem do parent (pai dele), desde que o pai seja NÃO STATIC (RELATIVE, ANSOLUTE, FIXED, sticky) ou da pagina
 
     PORTANTO ELE SAI DA FILA E A FILA ANDA 
 
     a CAIXA ROLA COM A TELA
 */
-html{
-	border:3px solid red;
-}
-body{
-	border:3px solid blue;
-	margin:15px;
-	position: relative;
-}
 div{
 	border: 1px solid black;
 	width:300px;
 	height:300px;
-
 }
 #um{
 	background-color: red;
@@ -33,10 +24,7 @@ div{
 }
 #dois{
 	background-color: green;
-	position:absolute;
-	top:150px;
-	left:400px;
-
+	position:static;
 }
 #tres{
 	background-color: aqua;

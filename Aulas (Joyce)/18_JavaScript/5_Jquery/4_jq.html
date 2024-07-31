@@ -35,7 +35,7 @@
             alert($(this).text())
         })
 
-        $('#carros').on('click', 'li', function(){
+        $('#carros').on('click', 'li', function () {
             alert($(this).text())
         })
 
@@ -43,10 +43,13 @@
             let entrada = $('#entrada').val()
             $('#entrada').val('').focus()
 
-            $('<li>').text(entrada).css({'color':'red', 'font-family':'arial', 'background-color':'yellow', "border":"1px solid black", "display":"block    "})
+            $('<li>').text(entrada).css({ 'color': 'red', 'font-family': 'arial', 'background-color': 'yellow', "border": "1px solid black", "display": "block    " })
                 .appendTo('#carros')
                 .list;
         })
+
+        $('#veja').animate({'margin-left': '+=30px', 'font-size':'+=15px'},3000)
+        //3000 = 3000 milisegundos = 3 segundos
 
     </script>
 

@@ -1,101 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script>
-        window.onload = function () {
-            document.getElementById('incrementa').addEventListener('click', function () {
-                var num = document.getElementById('final').value;
-                var num2 = parseInt(num) + 1;
-                document.getElementById('final').value = num2;
-            });
-            document.getElementById('decrementa').addEventListener('click', function () {
-                var num = document.getElementById('final').value;
-                var num2 = parseInt(num) - 1;
-                document.getElementById('final').value = num2;
-            });
-
-            document.getElementById('soma').addEventListener('click', function () {
-                let calc1 = document.getElementById('num1').value;
-                let calc2 = document.getElementById('num2').value;
-                let calc = parentInt(num1) + parseInt(num2);
-                document.getElementById('resultado').value = calc;
-
-
-            });
-        }
+      
     </script>
 </head>
-
 <body>
-    <input type="text" id="final" value="0" readonly>
-    <br>
-    <input type="button" id="incrementa" value="++">
-    <input type="button" id="decrementa" value="--">
-    <hr>
+<input type="text" id="resultado" value="0">
+<br>
+<input type="button" id="incrementa" value="++"> 
+<input type="button" id="decrementa" value="--">   
+<hr>
 
-    Num 1: <input type="text" id="num1">
-    <br>
-    Num 2: <input type="text" id="num2">
-    <br>
-    <input type="button" id="soma" value="+">
-    <input type="button" id="subtrai" value="-">
-    <input type="button" id="multiplica" value="*">
-    <input type="button" id="divide" value="/">
-    <p>0 - O Resultado é:</p>
-    <p>1 - O Resultado é:</p>
-    <p>2 - O Resultado é:</p>
-    <p>3 - O Resultado é:<p>
+Num 1: <input type="text" id="num1">
+<br>
+Num 2: <input type="text" id="num2">
+<br>
+<input type="button" id="soma" value="+"> 
+<input type="button" id="subtrai" value="-">
+<input type="button" id="multiplica" value="*"> 
+<input type="button" id="divide" value="/">
+<p>O Resultado é:</p>
 
-    <script>
-        //incremento e decremento
-        let resultado = document.getElementById('resultado')
 
-        document.getElementById('incrementa').addEventListener('click', () => {
-            //final.value=Number(resultado.value)+1
-            resultado.value++;
-        })
-
-        document.getElementById('decrementa').addEventListener('click', () => {
-            //final.value=Number(resultado.value)+1
-            resultado.value--;
-        })
-
-        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        //calculadora
-        let num1 = document.getElementById('num1')
-        let num2 = document.getElementById('num2')
-
-        let paragrafos = document.getElementsByTagName('p')
-
-        //console.log(paragrafos)
-        //document.getElementById('soma').addEventListener('evento','ação')
-        //document.getElementById('soma').addEventListener('click', ()=>{})
-        document.getElementById('soma').addEventListener('click', () => {
-            let resultado = Number(num1.value) + Number(num2.value)
-            //alert
-            paragrafos[0].innerText = "0 - O Resultado é:"+resultado
-        })
-
-        document.getElementById('subtrai').addEventListener('click', function(){
-            let resultado = Number(num1.value) - Number(num2.value)
-            paragrafos[1].innerText = `1 - O Resultado é: ${resultado}`
-        })
-
-        document.getElementById('multiplica').addEventListener('click', ()=>{
-            let resultado = Number(num1.value) * Number(num2.value)
-            paragrafos[2].innerText = `2 - O Resultado é: <strong>${resultado}<strong>`
-        })
-
-        document.getElementById('divide').addEventListener('click', ()=>{
-            let resultado = Number(num1.value) / Number(num2.value)
-            paragrafos[3].innerHTML = `2 - O Resultado é: <strong>${resultado}<strong>`
-        })
-    </script>
 </body>
-
 </html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        ESCOPO LOCAL
+
+        ESCOPO: onde a variavel será visivel
+        LOCAL: será visivel apenas pela funçaõ que foi criada
+
+        variaveis com escopo local: serao definidas com let ou var na raiz da função e serão acessadas por todas os elementos
+        */
+        let res = 'Samba';
+        var resposta = 'Agostinho';
+        
+        function testarVaravel()
+        {
+            let res = 'Impacta';
+            var resposta = 'Lineu';
+            alert(res + '   '+ resposta);
+        }
+        testarVaravel();
+        document.write(res + '   '+ resposta);
+        
+    </script>
+</body>
+</html>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,24 +20,25 @@
             });
 
             document.getElementById('soma').addEventListener('click', function () {
-                let calc1 = document.getElementById('num1').value;
-                let calc2 = document.getElementById('num2').value;
-                let calc = parseInt(calc1) + parseInt(calc2);
-                document.getElementById('valorFinal').textContent = `O resultado da soma de ${calc1} e ${calc2} é: ` + calc;
+                let calc1 = Number(num1)
+                let calc2 = Number(num2)
+                let soma = calc1 + calc2
+                document.getElementById('valorFinal').innerHTML = document.getElementById(`A soma de ${calc1} e ${calc2} é ${soma}`);
+
             });
 
             document.getElementById('subtrai').addEventListener('click', function () {
                 let calc1 = document.getElementById('num1').value;
                 let calc2 = document.getElementById('num2').value;
                 let calc = parseInt(calc1) - parseInt(calc2);
-                document.getElementById('valorFinal').textContent = `O resultado da subtração de ${calc1} e ${calc2} é: ` + calc;
+                document.getElementById('valorFinal').textContent = "O Resultado é: " + calc;
             });
 
             document.getElementById('multiplica').addEventListener('click', function () {
                 let calc1 = document.getElementById('num1').value;
                 let calc2 = document.getElementById('num2').value;
                 let calc = parseInt(calc1) * parseInt(calc2);
-                document.getElementById('valorFinal').textContent = `O resultado da multiplicação de ${calc1} e ${calc2} é: ` + calc;
+                document.getElementById('valorFinal').textContent = "O Resultado é: " + calc;
             });
 
             document.getElementById('divide').addEventListener('click', function () {
@@ -46,7 +46,7 @@
                 let calc2 = document.getElementById('num2').value;
                 if (parseInt(calc2) !== 0) {
                     let calc = parseInt(calc1) / parseInt(calc2);
-                    document.getElementById('valorFinal').textContent = `O resultado da divisão de ${calc1} e ${calc2} é: ` + calc;
+                    document.getElementById('valorFinal').textContent = "O Resultado é: " + calc;
                 } else {
                     document.getElementById('valorFinal').textContent = "Divisão por zero não é permitida";
                 }
@@ -54,7 +54,6 @@
         }
     </script>
 </head>
-
 <body>
     <input type="text" id="final" value="0" readonly>
     <br>
@@ -72,5 +71,4 @@
     <input type="button" id="divide" value="/">
     <p id="valorFinal">O Resultado é:</p>
 </body>
-
 </html>

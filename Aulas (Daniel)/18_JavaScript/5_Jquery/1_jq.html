@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -9,47 +9,43 @@
 </head>
 
 <body>
-    <!-- ol>li*4-->
-    <ol id="carros">
-        <li>Porsche</li>
-        <li>Lamborghini</li>
-        <li>Ferrari</li>
-        <li>Mercedes</li>
+    <!--ol>li*4-->
+    <ol id="cantoras">
+        <li>Lana Delrey</li>
+        <li>DJ Luck</li>
+        <li>DJ Arana</li>
+        <li>Pablo Vitar</li>
     </ol>
 
+    <!--p*2>input*2-->
     <p>
         <input type="text" id="entrada" value="Pensamentos Positivos">
-        <input type="button" id="aperte" value="Clique Aqui!!!">
+        <input type="button" id="aperta" value="Clique aqui!!!!!">
     </p>
-    <p id="veja">Porsche é bonita e corre bem</p>
-    <p is="escuta">O ronco do motor V8</p>
+    <p id="Veja">Bela, recatada e do Lar</p>
+    <p id="escuta">London Calling</p>
 
     <script>
-        // $('#veja') - Seletor Jquery
-        // $('li').click(()=>{}) - Ação que deverá ser executada
 
-        $('li').click(function () {
-            //let info =$(this).text()
-            //alert(info)
-
+        $('#cantoras').on('click', 'li', function () {
             alert($(this).text())
         })
-
-        $('#carros').on('click', 'li', function(){
-            alert($(this).text())
-        })
-
-        $('#aperte').click(function () {
+        $('#aperta').click(function () {
             let entrada = $('#entrada').val()
             $('#entrada').val('').focus()
-
-            $('<li>').text(entrada).css({'color':'red', 'font-family':'arial', 'background-color':'yellow', "border":"1px solid black", "display":"block    "})
-                .appendTo('#carros')
+            //$('<li>').text(entrada).css('color', 'Red').appendTo("#cantoras").list;
+            $('<li>')
+                .text(entrada)
+                .css({
+                    "color": "Red",
+                    "font-family": "arial",
+                    "border": "1px solid black"
+                    
+                })
+                .appendTo("#cantoras")
                 .list;
         })
-
     </script>
-
 </body>
 
 </html>

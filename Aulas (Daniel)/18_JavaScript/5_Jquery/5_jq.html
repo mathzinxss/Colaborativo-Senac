@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.1.1.min.js"></script> 
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> - Adicionar o JQUERY através do servidor do google -->
+    <script>
+        // window.onload = function () {
+        // $(document).ready(function () { - mesma função do `window.onload = function()`, porém em Jquery
+        $(document).ready(function () {
+
+            // dblclick
+            $('#carros').on('click', 'li', function () {
+                $(this).animate({ 'margin-left': '+=50%' }, 3000, function () {
+                    $(this).remove()
+                })
+            })
+            $('#aperte').click(function () {
+                let entrada = $('#entrada').val()
+                $('#entrada').val('').focus()
+
+                $('<li>').text(entrada).css({ 'color': 'red', 'font-family': 'arial' })
+                    .appendTo('#carros')
+                    .list;
+            })
+        })
+        //}
+    </script>
+</head>
+
+<body>
+    <!-- ol>li*4-->
+    <ol id="carros">
+        <li>Porsche</li>
+        <li>Lamborghini</li>
+        <li>Ferrari</li>
+        <li>Mercedes</li>
+    </ol>
+
+    <p>
+        <input type="text" id="entrada" value="Pensamentos Positivos">
+        <input type="button" id="aperte" value="Clique Aqui!!!">
+    </p>
+    <p id="veja">Porsche é bonita e corre bem</p>
+    <p is="escuta">O ronco do motor V8</p>
+
+</body>
+
+</html>

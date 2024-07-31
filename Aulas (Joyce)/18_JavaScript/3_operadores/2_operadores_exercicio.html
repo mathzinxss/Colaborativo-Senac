@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -23,7 +23,7 @@
                 let calc1 = document.getElementById('num1').value;
                 let calc2 = document.getElementById('num2').value;
                 let calc = parentInt(num1) + parseInt(num2);
-                document.getElementById('resultado').value = calc;  
+                document.getElementById('resultado').value = calc;
 
 
             });
@@ -49,57 +49,53 @@
     <p>0 - O Resultado é:</p>
     <p>1 - O Resultado é:</p>
     <p>2 - O Resultado é:</p>
-    <p>3 - O Resultado é:</p>
+    <p>3 - O Resultado é:<p>
 
-<script>
-    //incremento e decremento
-    let resultado = document.getElementById('resultado')
+    <script>
+        //incremento e decremento
+        let resultado = document.getElementById('resultado')
 
-    document.getElementById('incrementa').addEventListener('click' , ()=>{
-        //resultado.value=Number(resultado.value)+1
-        resultado.value++;
-    });
+        document.getElementById('incrementa').addEventListener('click', () => {
+            //final.value=Number(resultado.value)+1
+            resultado.value++;
+        })
 
-    document.getElementById('decrementa').addEventListener('click' , ()=>{
-        //resultado.value=Number(resultado.value)+1
-        resultado.value++;
-    });
+        document.getElementById('decrementa').addEventListener('click', () => {
+            //final.value=Number(resultado.value)+1
+            resultado.value--;
+        })
 
-/////////////////////////////////////////////////////////////////////////////////////// calculadora
-let num1 = document.getElementById('num1')
-let num2 = document.getElementById('num2')
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //calculadora
+        let num1 = document.getElementById('num1')
+        let num2 = document.getElementById('num2')
 
-let paragrafos = document.getElementsByTagName('p')
-//console.log(paragrafos)
+        let paragrafos = document.getElementsByTagName('p')
 
-//document.getElementById('soma').addEventListener('evento', 'ação')
-//document.getElementById('soma').addEventListener('click', ()=>{})
+        //console.log(paragrafos)
+        //document.getElementById('soma').addEventListener('evento','ação')
+        //document.getElementById('soma').addEventListener('click', ()=>{})
+        document.getElementById('soma').addEventListener('click', () => {
+            let resultado = Number(num1.value) + Number(num2.value)
+            //alert
+            paragrafos[0].innerText = "0 - O Resultado é:"+resultado
+        })
 
-document.getElementById('subtrai').addEventListener('click',function(){
-    let resultado = num1.value - num2.value
-    paragrafos[0].innerText = `<strong>1- O Resultado é: +resultado`;
-        
-    
-})
+        document.getElementById('subtrai').addEventListener('click', function(){
+            let resultado = Number(num1.value) - Number(num2.value)
+            paragrafos[1].innerText = `1 - O Resultado é: ${resultado}`
+        })
 
-    document.getElementById('subtrai').addEventListener('click',function(){
-    let resultado = num1.value - num2.value
-    paragrafos[1].innerText = `<strong>1- O Resultado é: ${resultado}<strong>`;
-        
-    
-})
+        document.getElementById('multiplica').addEventListener('click', ()=>{
+            let resultado = Number(num1.value) * Number(num2.value)
+            paragrafos[2].innerText = `2 - O Resultado é: <strong>${resultado}<strong>`
+        })
 
-document.getElementById('mutiplica').addEventListener('click',function(){
-    let resultado = num1.value * num2.value
-    paragrafos[2].innerHTML = `1 - O Resultado é: <strong>${resultado}<strong>`;
-    })
-
-    document.getElementById('divide').addEventListener('click',function(){
-    let resultado = num1.value / num2.value
-    paragrafos[2].innerText = `1 - O Resultado é: <strong>${resultado}<strong>`;
-    })
+        document.getElementById('divide').addEventListener('click', ()=>{
+            let resultado = Number(num1.value) / Number(num2.value)
+            paragrafos[3].innerHTML = `2 - O Resultado é: <strong>${resultado}<strong>`
+        })
     </script>
- 
 </body>
 
 </html>

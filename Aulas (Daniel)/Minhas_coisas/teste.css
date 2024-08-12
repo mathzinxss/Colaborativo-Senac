@@ -1,0 +1,37 @@
+h1 {
+    color: green;
+    border: 0.2rem solid green;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+p {
+    font-size: 1.5rem;
+    color: green;
+
+}
+
+body {
+    background-color: whitesmoke;
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+}
+
+#p1 {
+    color: blueviolet;
+}
+
+
+.caixa {
+    background-color: blueviolet;
+    padding: 2.5rem;
+    border: solid blue 10px;
+    text-align: center;
+
+}
+

@@ -1,19 +1,32 @@
 h1 {
-    color: green;
-    border: 0.2rem solid green;
+    color: black;
+    border: 0.2rem solid black;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
 
 }
 
 p {
     font-size: 1.5rem;
-    color: green;
+    color: whitesmoke;
+
+
+}
+
+#p1 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    background-color: black;
+    border: 5px white solid;
+
 
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: gray;
 
     background-size: cover;
 
@@ -34,4 +47,9 @@ body {
     text-align: center;
 
 }
-
+button{
+    color: aqua;
+    background-color: black;
+    border: black;
+    width: ;
+}
